@@ -1,1 +1,1 @@
-Jonah Siekmann, ONID: siekmanj
+This is my assignment-1 submission!
