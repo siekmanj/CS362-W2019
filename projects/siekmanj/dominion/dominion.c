@@ -659,7 +659,9 @@ int smithyEffect(int currentPlayer, struct gameState *state, int handPos){
 /*
  * Jonah Siekmann 1/26/2019
  */
-int adventurerEffect(int currentPlayer, struct gameState *state, int drawntreasure, int *temphand){
+int adventurerEffect(int currentPlayer, struct gameState *state){
+	int temphand[MAX_HAND];
+	int drawntreasure = 0;
 	int cardDrawn;
 	int z = 0;
 	while(drawntreasure<2){
@@ -717,8 +719,9 @@ int mineEffect(int currentPlayer, struct gameState *state, int choice1, int choi
 /*
  * Jonah Siekmann 1/26/2019
  */
-int feastEffect(int currentPlayer, struct gameState *state, int choice1, int choice2, int handPos, int *temphand){
+int feastEffect(int currentPlayer, struct gameState *state, int choice1, int choice2, int handPos){
 	//gain card with cost up to 5
+	int temphand[MAX_HAND];
 	//Backup hand
 	for(int i = 0; i <= state->handCount[currentPlayer]; i++){
 		temphand[i] = state->hand[currentPlayer][i];//Backup card
@@ -808,8 +811,8 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 	int nextPlayer = currentPlayer + 1;
 
 	int tributeRevealedCards[2] = {-1, -1};
-	int temphand[MAX_HAND];// moved above the if statement
-	int drawntreasure=0;
+	//int temphand[MAX_HAND];// moved above the if statement
+	//int drawntreasure=0;
 	//int cardDrawn;
 	//int z = 0;// this is the counter for the temp hand
 	if (nextPlayer > (state->numPlayers - 1)){
@@ -821,13 +824,13 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 	switch( card ) 
 		{
 		case adventurer:
-			return adventurerEffect(currentPlayer, state, drawntreasure, temphand);	
+			return adventurerEffect(currentPlayer, state);	
 		
 		case council_room:
 			return councilroomEffect(currentPlayer, state, handPos);
 		
 		case feast:
-			return feastEffect(currentPlayer, state, choice1, choice2, handPos, temphand);
+			return feastEffect(currentPlayer, state, choice1, choice2, handPos);
 
 		case gardens:
 			return -1;
