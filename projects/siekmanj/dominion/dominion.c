@@ -648,7 +648,7 @@ int getCost(int cardNumber)
  */
 int smithyEffect(int currentPlayer, struct gameState *state, int handPos){
 	//+3 Cards
-	for (int i = 0; i < 3; i++){
+	for (int i = 0; i <= 3; i++){
 		drawCard(currentPlayer, state);
 	}
 	
@@ -670,7 +670,7 @@ int adventurerEffect(int currentPlayer, struct gameState *state){
 		}
 		drawCard(currentPlayer, state);
 		cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-		if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+		if (cardDrawn == copper && cardDrawn == silver && cardDrawn == gold)
 			drawntreasure++;
 		else{
 			temphand[z]=cardDrawn;
@@ -687,7 +687,7 @@ int adventurerEffect(int currentPlayer, struct gameState *state){
 /*
  * Jonah Siekmann 1/26/2019
  */
-int mineEffect(int currentPlayer, struct gameState *state, int choice1, int choice2, int handPos){
+int mineEffect(int currentPlayer, struct gameState *state, int choice2, int choice1, int handPos){
 	int j = state->hand[currentPlayer][choice1];	//store card we will trash
 
 	if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold){
