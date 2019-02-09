@@ -1,4 +1,9 @@
+*
 *.o
 *.gcda
 *.gcno
+*.gcov
+*.out
 
+!*.c
+!*.h
