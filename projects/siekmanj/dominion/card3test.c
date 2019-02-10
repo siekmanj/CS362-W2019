@@ -43,18 +43,26 @@ int main(){
 
 	int test = 1;
 	for(int i = copper; i <= gold; i++){
+		int only_choice;
+		if(i == copper)
+			only_choice = silver;
+		if(i == silver)
+			only_choice = gold;
+		if(i == gold)
+			only_choice = -1;
 		{
 			memcpy(&game, &test_game, sizeof(struct gameState));
-			game.hand[current_player][0] = i;
+			game.hand[current_player][0] = i; //put a coin in first position of hand
 			choice1 = 0;
 			choice2 = silver;
+
 			int val1 = getCost(i);
 			int val2 = getCost(silver);
+
 			printf("TEST %d: turning treasure of val %d into treasure of val %d.\n", test++, val1, val2);
 			int ret = cardEffect(mine, choice1, choice2, choice3, &game, handpos, &bonus);
-			printf("	got ret %d\n", ret);
 			if(!ret){
-				asserttrue(game.hand[current_player][game.handCount[current_player]-1] == silver);
+				asserttrue(game.hand[current_player][0] == silver);
 			}else{
 				asserttrue(val1 >= val2)
 			}
@@ -69,10 +77,8 @@ int main(){
 			int val2 = getCost(gold);
 			printf("TEST %d: turning treasure of val %d into treasure of val %d.\n", test++, val1, val2);
 			int ret = cardEffect(mine, choice1, choice2, choice3, &game, handpos, &bonus);
-			printf("	got ret %d\n", ret);
 			if(!ret){
-				int appended_card = game.hand[current_player][game.handCount[current_player]-1];
-				printf("returned 0, so %d should be %d\n", appended_card, gold);
+				int appended_card = game.hand[current_player][0];
 				asserttrue(appended_card == gold);
 			}else{
 				asserttrue(val1 >= val2);
@@ -81,7 +87,6 @@ int main(){
 	}
 
 	printf("TEST %d: +1 card to player hand\n", test++);
-	printf("	hand count = %d, expected = %d\n", game.handCount[current_player], test_game.handCount[current_player] + cards_drawn - cards_discarded);
 	asserttrue(game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded);
 
 

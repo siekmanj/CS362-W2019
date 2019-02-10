@@ -1,6 +1,6 @@
 /*
- * card2test.c
- * Testing the adventurer card.
+ * card4test.c
+ * Testing the council room card.
  */
 
 #include "dominion.h"

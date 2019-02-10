@@ -47,4 +47,14 @@ int main(){
 	printf("TEST 2: using smithy (-3 cards to player deck)\n");
 	printf("	deck count = %d, expected = %d\n", game.deckCount[current_player], test_game.deckCount[current_player] - cards_drawn);
 	asserttrue(game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn);
+	
+	int test = 3;
+	for(int i = 0; i < NUMPLAYERS; i++){
+		if(i != current_player){
+			printf("TEST %d: Checking to make sure player %d hand is not changed.\n", test++, i);
+			asserttrue(game.handCount[i] == test_game.handCount[i]);
+			printf("TEST %d: Checking to make sure player %d deck is not changed.\n", test++, i);
+			asserttrue(game.deckCount[i] == test_game.deckCount[i]);
+		}
+	}
 }

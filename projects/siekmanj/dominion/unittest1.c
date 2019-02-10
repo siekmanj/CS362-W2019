@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define TESTFUNC "isGameOver"
 #define NUMPLAYERS 2
 #define SEED 1234
 
@@ -19,6 +20,7 @@ int main(){
 	struct gameState game, test_game;
 	int cards[10] = {adventurer, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy, council_room};
 
+	printf("--------TESTING FUNCTION: '%s'--------\n", TESTFUNC);
 	initializeGame(NUMPLAYERS, cards, SEED, &game);
 	memcpy(&test_game, &game, sizeof(struct gameState));
 	game.supplyCount[province] = 0;

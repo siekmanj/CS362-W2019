@@ -523,7 +523,8 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state) {
 }
 
 int drawCard(int player, struct gameState *state)
-{	int count;
+{	
+	int count;
 	int deckCounter;
 	if (state->deckCount[player] <= 0){//Deck is empty
 		
@@ -670,7 +671,7 @@ int adventurerEffect(int currentPlayer, struct gameState *state){
 		}
 		drawCard(currentPlayer, state);
 		cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-		if (cardDrawn == copper && cardDrawn == silver && cardDrawn == gold)
+		if (cardDrawn == copper || cardDrawn == silver && cardDrawn == gold)
 			drawntreasure++;
 		else{
 			temphand[z]=cardDrawn;
@@ -710,12 +711,13 @@ int mineEffect(int currentPlayer, struct gameState *state, int choice2, int choi
 	//discard trashed card
 	for(int i = 0; i < state->handCount[currentPlayer]; i++){
 		if (state->hand[currentPlayer][i] == j){
-				discardCard(i, currentPlayer, state, 0);			
+				discardCard(i, currentPlayer, state, 0);
 				break;
 			}
 	}
 	return 0;
 }
+
 /*
  * Jonah Siekmann 1/26/2019
  */
