@@ -8,7 +8,23 @@ dominion.o: dominion.h dominion.c rngs.o
 
 playdom: dominion.o playdom.c
 	gcc -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)
-#To run playdom you need to entere: ./playdom <any integer number> like ./playdom 10*/
+#To run playdom you need to enter: ./playdom <any integer number> like ./playdom 10*/
+
+unittest1: unittest1.c dominion.o rngs.o
+	gcc -o unittest1 -g unittest1.c dominion.o rngs.o $(CFLAGS)
+
+card1test: card1test.c dominion.o rngs.o
+	gcc -o card1test -g card1test.c dominion.o rngs.o $(CFLAGS)
+
+card2test: card2test.c dominion.o rngs.o
+	gcc -o card2test -g card2test.c dominion.o rngs.o $(CFLAGS)
+
+card3test: card3test.c dominion.o rngs.o
+	gcc -o card3test -g card3test.c dominion.o rngs.o $(CFLAGS)
+
+card4test: card4test.c dominion.o rngs.o
+	gcc -o card4test -g card4test.c dominion.o rngs.o $(CFLAGS)
+
 testDrawCard: testDrawCard.c dominion.o rngs.o
 	gcc  -o testDrawCard -g  testDrawCard.c dominion.o rngs.o $(CFLAGS)
 
