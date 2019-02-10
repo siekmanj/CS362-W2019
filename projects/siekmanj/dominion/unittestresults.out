@@ -1,0 +1,219 @@
+Result for running unit tests:
+unittest1.c:
+--------TESTING FUNCTION: 'isGameOver'--------
+TEST 1: Game should end when provinces are 0.
+TEST SUCCESSFULLY COMPLETED.
+TEST 2: Game should end when any three supply piles are empty.
+TEST SUCCESSFULLY COMPLETED.
+TEST 3: Game should not end when there is at least one province left.
+TEST SUCCESSFULLY COMPLETED.
+TEST 4: Game should not end when at least three supply piles are not empty.
+TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:16.03% of 605
+Branches executed:17.27% of 417
+Taken at least once:14.15% of 417
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+--------TESTING FUNCTION: 'fullDeckCount'--------
+TEST 0: inserting 3 of card value of 0 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 1: inserting 2 of card value of 1 into deck.
+TEST FAILED: 'fullDeckCount(player, i, &game) == count' on line 53.
+TEST 2: inserting 2 of card value of 2 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 3: inserting 4 of card value of 3 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 4: inserting 4 of card value of 4 into deck.
+TEST FAILED: 'fullDeckCount(player, i, &game) == count' on line 53.
+TEST 5: inserting 1 of card value of 5 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 6: inserting 4 of card value of 6 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 7: inserting 6 of card value of 7 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 8: inserting 4 of card value of 8 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 9: inserting 5 of card value of 9 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 10: inserting 4 of card value of 10 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 11: inserting 1 of card value of 11 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 12: inserting 5 of card value of 12 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 13: inserting 3 of card value of 13 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 14: inserting 4 of card value of 14 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 15: inserting 3 of card value of 15 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 16: inserting 0 of card value of 16 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 17: inserting 4 of card value of 17 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 18: inserting 1 of card value of 18 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 19: inserting 5 of card value of 19 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 20: inserting 0 of card value of 20 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 21: inserting 7 of card value of 21 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 22: inserting 1 of card value of 22 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 23: inserting 4 of card value of 23 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 24: inserting 2 of card value of 24 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 25: inserting 4 of card value of 25 into deck.
+TEST SUCCESSFULLY COMPLETED.
+TEST 26: passing invalid card value to function.
+TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:17.36% of 605
+Branches executed:19.66% of 417
+Taken at least once:16.31% of 417
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+--------TESTING FUNCTION: 'updateCoins'--------
+TEST 1: returned 0:
+TEST SUCCESSFULLY COMPLETED.
+TEST 2: expected hand value: 10 coins.
+TEST SUCCESSFULLY COMPLETED.
+TEST 3: returned 0:
+TEST SUCCESSFULLY COMPLETED.
+TEST 4: expected hand value: 11 coins.
+TEST SUCCESSFULLY COMPLETED.
+TEST 5: returned 0:
+TEST SUCCESSFULLY COMPLETED.
+TEST 6: expected hand value: 12 coins.
+TEST SUCCESSFULLY COMPLETED.
+TEST 7: returned 0:
+TEST SUCCESSFULLY COMPLETED.
+TEST 8: expected hand value: 15 coins.
+TEST SUCCESSFULLY COMPLETED.
+TEST 9: returned 0:
+TEST SUCCESSFULLY COMPLETED.
+TEST 10: expected hand value: 13 coins.
+TEST SUCCESSFULLY COMPLETED.
+Test 11: Testing with no coins in hand.
+TEST SUCCESSFULLY COMPLETED.
+Test 12: Testing with hand of size zero.
+TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:17.69% of 605
+Branches executed:19.66% of 417
+Taken at least once:16.79% of 417
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+--------TESTING FUNCTION: 'endTurn'--------
+TEST 1: Checking if next player is picked correctly.
+TEST SUCCESSFULLY COMPLETED.
+TEST 2: Checking if next player is picked correctly when current player is the last player.
+TEST SUCCESSFULLY COMPLETED.
+TEST 3: Checking if cards were discarded correctly.
+TEST SUCCESSFULLY COMPLETED.
+TEST 4: Checking if five cards were drawn.
+TEST SUCCESSFULLY COMPLETED.
+TEST 5: Checking to make sure all other player's hands are empty.
+TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:21.32% of 605
+Branches executed:21.10% of 417
+Taken at least once:18.23% of 417
+Calls executed:10.53% of 95
+Creating 'dominion.c.gcov'
+
+card1test.c:
+--------TESTING CARD: 'smithy'--------
+TEST 1: using smithy (+3 cards to player hand)
+	hand count = 8, expected = 7
+TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 45.
+TEST 2: using smithy (-3 cards to player deck)
+	deck count = 1, expected = 2
+TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 49.
+TEST 3: Checking to make sure player 1 hand is not changed.
+TEST SUCCESSFULLY COMPLETED.
+TEST 4: Checking to make sure player 1 deck is not changed.
+TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:25.29% of 605
+Branches executed:28.54% of 417
+Taken at least once:19.90% of 417
+Calls executed:14.74% of 95
+Creating 'dominion.c.gcov'
+
+card2test.c:
+--------TESTING CARD: 'adventurer'--------
+TEST 1: +2 cards to player hand
+	hand count = 7, expected = 6
+TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 49.
+TEST 2: -2 cards to player deck
+	deck count = 3, expected = 3
+TEST SUCCESSFULLY COMPLETED.
+TEST 3: +2 treasure cards to player hand:
+	treasures in new hand = 6, treasures in old hand = 4
+TEST SUCCESSFULLY COMPLETED.
+TEST 4: -2 treasure cards from player deck:
+	treasures in new deck = 1, treasures in old deck = 3
+TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:27.44% of 605
+Branches executed:30.46% of 417
+Taken at least once:21.34% of 417
+Calls executed:16.84% of 95
+Creating 'dominion.c.gcov'
+
+card3test.c:
+--------TESTING CARD: 'mine'--------
+TEST 1: turning treasure of val 0 into treasure of val 3.
+TEST FAILED: 'val1 >= val2' on line 67.
+TEST 2: turning treasure of val 0 into treasure of val 6.
+TEST FAILED: 'val1 >= val2' on line 84.
+TEST 3: turning treasure of val 3 into treasure of val 3.
+TEST SUCCESSFULLY COMPLETED.
+TEST 4: turning treasure of val 3 into treasure of val 6.
+TEST FAILED: 'val1 >= val2' on line 84.
+TEST 5: turning treasure of val 6 into treasure of val 3.
+TEST SUCCESSFULLY COMPLETED.
+TEST 6: turning treasure of val 6 into treasure of val 6.
+TEST SUCCESSFULLY COMPLETED.
+TEST 7: +1 card to player hand
+TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:29.75% of 605
+Branches executed:37.65% of 417
+Taken at least once:22.54% of 417
+Calls executed:17.89% of 95
+Creating 'dominion.c.gcov'
+
+card4test.c:
+--------TESTING CARD: 'council room'--------
+TEST 1: card effect returns 0.
+TEST SUCCESSFULLY COMPLETED.
+TEST 2: +4 cards to player hand
+	hand count = 8, expected = 8
+TEST SUCCESSFULLY COMPLETED.
+TEST 3: -4 cards to player deck
+	deck count = 1, expected = 1
+TEST SUCCESSFULLY COMPLETED.
+TEST 4: +1 buy
+TEST SUCCESSFULLY COMPLETED.
+TEST 5: +1 card to player 1 hand:
+TEST SUCCESSFULLY COMPLETED.
+TEST 6: -1 card to player 1 deck:
+TEST SUCCESSFULLY COMPLETED.
+File 'dominion.c'
+Lines executed:31.57% of 605
+Branches executed:39.09% of 417
+Taken at least once:24.22% of 417
+Calls executed:22.11% of 95
+Creating 'dominion.c.gcov'
+
