@@ -648,7 +648,7 @@ int getCost(int cardNumber)
  */
 int smithyEffect(int currentPlayer, struct gameState *state, int handPos){
 	//+3 Cards
-	for (int i = 0; i <= 3; i++){
+	for (int i = 0; i < 3; i++){
 		drawCard(currentPlayer, state);
 	}
 	
@@ -660,6 +660,7 @@ int smithyEffect(int currentPlayer, struct gameState *state, int handPos){
  * Jonah Siekmann 1/26/2019
  */
 int adventurerEffect(int currentPlayer, struct gameState *state){
+	printf("INSIDE ADVENTURER EFFECT\n");
 	int temphand[MAX_HAND];
 	int drawntreasure = 0;
 	int cardDrawn;
@@ -670,7 +671,7 @@ int adventurerEffect(int currentPlayer, struct gameState *state){
 		}
 		drawCard(currentPlayer, state);
 		cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-		if (cardDrawn == copper && cardDrawn == silver && cardDrawn == gold)
+		if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
 			drawntreasure++;
 		else{
 			temphand[z]=cardDrawn;
@@ -678,7 +679,7 @@ int adventurerEffect(int currentPlayer, struct gameState *state){
 			z++;
 		}
 	}
-	while(z-1>=0){
+	while(z>=0){
 		state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
 		z=z-1;
 	}
