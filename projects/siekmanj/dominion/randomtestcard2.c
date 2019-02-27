@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TESTCARD "adventurer"
+#define TESTCARD "village"
 
 int get_random_card(){
 	int low = copper;
@@ -73,8 +73,8 @@ int main(){
 		struct gameState game, test_game;
 		int cards[card_count];	
 		make_random_actions(cards, card_count);
-		if(!is_card_in_cards(adventurer, cards, card_count)){
-			cards[rand()%card_count] = adventurer;
+		if(!is_card_in_cards(village, cards, card_count)){
+			cards[rand()%card_count] = village;
 		}
 
 		initializeGame(player_count, cards, SEED, &game);
@@ -86,48 +86,19 @@ int main(){
 		}
 		game.whoseTurn = current_player;
 		memcpy(&test_game, &game, sizeof(struct gameState));
-		printf("cards: %d\nplayers %d\ncurrent player: %d\nchoice1: %d\nchoice2: %d\nchoice3: %d\nhandpos: %d\nbonus: %d\n", card_count, player_count, current_player, choice1, choice2, choice3, handpos, bonus);
 
-		cardEffect(adventurer, choice1, choice2, choice3, &game, handpos, &bonus);
-		printf("TEST %d: +2 cards to player hand\n", tests++);
-		printf("	hand count = %d, expected = %d\n", game.handCount[current_player], test_game.handCount[current_player] + cards_drawn - cards_discarded);
-		asserttrue(game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded);
+		cardEffect(village, choice1, choice2, choice3, &game, handpos, &bonus);
 
-		printf("TEST %d: -2 cards to player deck\n", tests++);
-		printf("	deck count = %d, expected = %d\n", game.deckCount[current_player], test_game.deckCount[current_player] - cards_drawn);
-		asserttrue(game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn);
-
-		printf("TEST %d: +2 treasure cards to player hand:\n", tests++);
-		int new_treasure_count = 0;
-		for(int i = 0; i < game.handCount[current_player]; i++){
-			int current_card = game.hand[current_player][i];
-			if(current_card == copper || current_card == silver || current_card == gold)
-				new_treasure_count++;
-		}
-		int old_treasure_count = 0;
-		for(int i = 0; i < test_game.handCount[current_player]; i++){
-			int current_card = test_game.hand[current_player][i];
-			if(current_card == copper || current_card == silver || current_card == gold)
-				old_treasure_count++;
-		}
-		printf("	treasures in new hand = %d, treasures in old hand = %d\n", new_treasure_count, old_treasure_count);
-		asserttrue(new_treasure_count == old_treasure_count+2);
-
-		printf("TEST %d: -2 treasure cards from player deck:\n", tests++);
-		new_treasure_count = 0;
-		for(int i = 0; i < game.deckCount[current_player]; i++){
-			int current_card = game.deck[current_player][i];
-			if(current_card == copper || current_card == silver || current_card == gold)
-				new_treasure_count++;
-		}
-		old_treasure_count = 0;
-		for(int i = 0; i < test_game.deckCount[current_player]; i++){
-			int current_card = test_game.deck[current_player][i];
-			if(current_card == copper || current_card == silver || current_card == gold)
-				old_treasure_count++;
-		}
-		printf("	treasures in new deck = %d, treasures in old deck = %d\n", new_treasure_count, old_treasure_count);
-		asserttrue(new_treasure_count == old_treasure_count-2);
+		//check to see that one card was gained from deck
+		printf("Test %d: hand count +1 -1.\n", tests++);
+		asserttrue(game.handCount[current_player] == test_game.handCount[current_player]);
+		printf("Test %d: deck count -1\n", tests++);
+		asserttrue(game.deckCount[current_player] == test_game.deckCount[current_player] - 1);
+		printf("Test %d: action count +2\n", tests++);
+		asserttrue(game.numActions == test_game.numActions + 2);
+		printf("Test %d: discard +1\n", tests++);
+		asserttrue(game.discardCount[current_player] == test_game.discardCount[current_player]+1);
 	}
 }
+
 
