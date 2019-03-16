@@ -37562,13 +37562,13 @@ choice3: 903633726
 handpos: 3
 bonus: 58591440
 TEST 9: +2 cards to player hand
-	hand count = -113, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 10: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 11: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 12: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -37582,13 +37582,13 @@ choice3: 1534512650
 handpos: 123
 bonus: 256825559
 TEST 13: +2 cards to player hand
-	hand count = 4, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 14: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 15: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 1
+	treasures in new hand = 2, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 16: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -37602,7 +37602,7 @@ choice3: 942232734
 handpos: 27
 bonus: 292594697
 TEST 17: +2 cards to player hand
-	hand count = -1, expected = 6
+	hand count = -61, expected = 8
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 18: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -37622,7 +37622,7 @@ choice3: 825867182
 handpos: 453
 bonus: 1156669207
 TEST 21: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -61, expected = -59
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 22: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -37642,7 +37642,7 @@ choice3: 1518909618
 handpos: 190
 bonus: 1458510094
 TEST 25: +2 cards to player hand
-	hand count = -113, expected = 2
+	hand count = -98, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 26: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -37662,7 +37662,7 @@ choice3: 40215898
 handpos: 323
 bonus: 1348551138
 TEST 29: +2 cards to player hand
-	hand count = -113, expected = -111
+	hand count = -98, expected = -96
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 30: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -37705,14 +37705,14 @@ TEST 37: +2 cards to player hand
 	hand count = 2, expected = 2
 TEST SUCCESSFULLY COMPLETED.
 TEST 38: -2 cards to player deck
-	deck count = 4, expected = 7
+	deck count = 8, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 39: +2 treasure cards to player hand:
 	treasures in new hand = 2, treasures in old hand = 0
 TEST SUCCESSFULLY COMPLETED.
 TEST 40: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 4
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 2, treasures in old deck = 4
+TEST SUCCESSFULLY COMPLETED.
 cards: 9
 players 4
 current player: 2
@@ -37742,7 +37742,7 @@ choice3: 255933587
 handpos: 354
 bonus: 543661726
 TEST 45: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -61, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 46: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -37762,7 +37762,7 @@ choice3: 763949151
 handpos: 375
 bonus: 867493978
 TEST 49: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -65, expected = -59
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 50: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -37782,7 +37782,7 @@ choice3: 1330634181
 handpos: 123
 bonus: 1356090435
 TEST 53: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -67, expected = -63
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 54: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -37802,7 +37802,7 @@ choice3: 1494362958
 handpos: 186
 bonus: 450292689
 TEST 57: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -67, expected = -65
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 58: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -37822,7 +37822,7 @@ choice3: 1279685548
 handpos: 157
 bonus: 2059666085
 TEST 61: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -67, expected = -65
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 62: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -37842,7 +37842,7 @@ choice3: 21609142
 handpos: 442
 bonus: 196534623
 TEST 65: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -67, expected = -65
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 66: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -37862,13 +37862,13 @@ choice3: 1485891025
 handpos: 447
 bonus: 308132867
 TEST 69: +2 cards to player hand
-	hand count = 4, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 70: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 71: +2 treasure cards to player hand:
-	treasures in new hand = 2, treasures in old hand = 2
+	treasures in new hand = 3, treasures in old hand = 2
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 72: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -37882,7 +37882,7 @@ choice3: 337818985
 handpos: 223
 bonus: 32908889
 TEST 73: +2 cards to player hand
-	hand count = -1, expected = 6
+	hand count = -67, expected = 8
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 74: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -37902,14 +37902,14 @@ choice3: 1179581615
 handpos: 392
 bonus: 1053031425
 TEST 77: +2 cards to player hand
-	hand count = -53, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 78: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 79: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 80: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -37922,7 +37922,7 @@ choice3: 1538577222
 handpos: 318
 bonus: 486809171
 TEST 81: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -67, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 82: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -37942,7 +37942,7 @@ choice3: 443703263
 handpos: 405
 bonus: 422610601
 TEST 85: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -67, expected = -65
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 86: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -37962,17 +37962,17 @@ choice3: 484208781
 handpos: 398
 bonus: 1326424666
 TEST 89: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 90: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 6, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 91: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 92: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 3
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 1, treasures in old deck = 3
+TEST SUCCESSFULLY COMPLETED.
 cards: 16
 players 4
 current player: 1
@@ -37982,13 +37982,13 @@ choice3: 146051735
 handpos: 354
 bonus: 405568324
 TEST 93: +2 cards to player hand
-	hand count = -53, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 94: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 95: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 96: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -38022,7 +38022,7 @@ choice3: 955380708
 handpos: 387
 bonus: 1193761940
 TEST 101: +2 cards to player hand
-	hand count = -1, expected = 8
+	hand count = -61, expected = 8
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 102: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38042,13 +38042,13 @@ choice3: 806919108
 handpos: 104
 bonus: 1953643392
 TEST 105: +2 cards to player hand
-	hand count = 2, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 106: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 107: +2 treasure cards to player hand:
-	treasures in new hand = 2, treasures in old hand = 2
+	treasures in new hand = 3, treasures in old hand = 2
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 108: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -38082,13 +38082,13 @@ choice3: 1188698235
 handpos: 490
 bonus: 1135122121
 TEST 113: +2 cards to player hand
-	hand count = -94, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 114: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 115: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 116: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -38122,14 +38122,14 @@ choice3: 1928741409
 handpos: 278
 bonus: 1360507833
 TEST 121: +2 cards to player hand
-	hand count = -53, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 122: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 5, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 123: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 124: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -38142,16 +38142,16 @@ choice3: 150038421
 handpos: 66
 bonus: 1785444424
 TEST 125: +2 cards to player hand
-	hand count = -53, expected = -51
+	hand count = 3, expected = 4
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 126: -2 cards to player deck
-	deck count = 0, expected = -3
+	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 127: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 128: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 0
+	treasures in new deck = 0, treasures in old deck = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
 cards: 4
 players 2
@@ -38162,7 +38162,7 @@ choice3: 442440185
 handpos: 354
 bonus: 31329044
 TEST 129: +2 cards to player hand
-	hand count = -53, expected = -51
+	hand count = -53, expected = 5
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 130: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38182,13 +38182,13 @@ choice3: 509988148
 handpos: 337
 bonus: 1854120757
 TEST 133: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 1, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 134: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 135: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 136: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -38202,7 +38202,7 @@ choice3: 1999959298
 handpos: 123
 bonus: 408947420
 TEST 137: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = 3
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 138: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38222,7 +38222,7 @@ choice3: 917376627
 handpos: 275
 bonus: 504980397
 TEST 141: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -67
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 142: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38242,7 +38242,7 @@ choice3: 735063185
 handpos: 387
 bonus: 2113497338
 TEST 145: +2 cards to player hand
-	hand count = -94, expected = 2
+	hand count = -84, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 146: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -38262,17 +38262,17 @@ choice3: 431757398
 handpos: 82
 bonus: 1148604331
 TEST 149: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 150: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 6, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 151: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 152: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 4
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 2, treasures in old deck = 4
+TEST SUCCESSFULLY COMPLETED.
 cards: 2
 players 2
 current player: 1
@@ -38282,13 +38282,13 @@ choice3: 199065332
 handpos: 425
 bonus: 661714057
 TEST 153: +2 cards to player hand
-	hand count = -53, expected = 3
+	hand count = 2, expected = 4
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 154: -2 cards to player deck
-	deck count = 0, expected = -3
+	deck count = 0, expected = 3
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 155: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 2, treasures in old hand = 2
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 156: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -38322,13 +38322,13 @@ choice3: 1654977916
 handpos: 150
 bonus: 697155696
 TEST 161: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 1, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 162: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 163: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 164: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -38342,7 +38342,7 @@ choice3: 264737890
 handpos: 241
 bonus: 481548860
 TEST 165: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = 3
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 166: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38362,13 +38362,13 @@ choice3: 1581702956
 handpos: 29
 bonus: 393894782
 TEST 169: +2 cards to player hand
-	hand count = -53, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 170: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 171: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 172: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -38402,13 +38402,13 @@ choice3: 1793060867
 handpos: 262
 bonus: 1012795027
 TEST 177: +2 cards to player hand
-	hand count = -28, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 178: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 179: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 180: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -38422,7 +38422,7 @@ choice3: 1835283618
 handpos: 455
 bonus: 1224416135
 TEST 181: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -69, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 182: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -38442,13 +38442,13 @@ choice3: 630326740
 handpos: 101
 bonus: 2092027884
 TEST 185: +2 cards to player hand
-	hand count = -53, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 186: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 187: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 188: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -38462,7 +38462,7 @@ choice3: 1226903356
 handpos: 419
 bonus: 2024790096
 TEST 189: +2 cards to player hand
-	hand count = -53, expected = -51
+	hand count = -53, expected = 3
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 190: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38482,13 +38482,13 @@ choice3: 595794492
 handpos: 421
 bonus: 305684434
 TEST 193: +2 cards to player hand
-	hand count = -28, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 194: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 195: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 196: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -38522,7 +38522,7 @@ choice3: 1937967219
 handpos: 285
 bonus: 923221768
 TEST 201: +2 cards to player hand
-	hand count = -1, expected = 4
+	hand count = -69, expected = 4
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 202: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38542,7 +38542,7 @@ choice3: 20118011
 handpos: 295
 bonus: 1003855394
 TEST 205: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -67
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 206: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38562,7 +38562,7 @@ choice3: 577738687
 handpos: 269
 bonus: 463549664
 TEST 209: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -67
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 210: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38582,13 +38582,13 @@ choice3: 674336476
 handpos: 116
 bonus: 614733864
 TEST 213: +2 cards to player hand
-	hand count = -35, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 214: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 215: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 216: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -38602,14 +38602,14 @@ choice3: 1534835517
 handpos: 42
 bonus: 1295125124
 TEST 217: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 218: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 5, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 219: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 220: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -38642,13 +38642,13 @@ choice3: 170160045
 handpos: 361
 bonus: 1962708384
 TEST 225: +2 cards to player hand
-	hand count = -1, expected = 8
+	hand count = 2, expected = 8
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 226: -2 cards to player deck
 	deck count = 0, expected = -3
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 227: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 228: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -38662,7 +38662,7 @@ choice3: 825860577
 handpos: 437
 bonus: 268197240
 TEST 229: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -65, expected = 4
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 230: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38682,7 +38682,7 @@ choice3: 584211097
 handpos: 347
 bonus: 873389085
 TEST 233: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -66, expected = -63
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 234: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38702,14 +38702,14 @@ choice3: 53750344
 handpos: 202
 bonus: 360192558
 TEST 237: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 238: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 239: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 240: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -38722,14 +38722,14 @@ choice3: 867507330
 handpos: 489
 bonus: 2067994585
 TEST 241: +2 cards to player hand
-	hand count = -35, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 242: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 243: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 244: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -38742,7 +38742,7 @@ choice3: 1672792628
 handpos: 326
 bonus: 730131193
 TEST 245: +2 cards to player hand
-	hand count = -118, expected = -92
+	hand count = -88, expected = -82
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 246: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38762,17 +38762,17 @@ choice3: 1403967930
 handpos: 499
 bonus: 917207761
 TEST 249: +2 cards to player hand
-	hand count = -62, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 250: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 1, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 251: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 252: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 3
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 1, treasures in old deck = 3
+TEST SUCCESSFULLY COMPLETED.
 cards: 16
 players 3
 current player: 1
@@ -38842,13 +38842,13 @@ choice3: 296248594
 handpos: 30
 bonus: 1790562049
 TEST 265: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 266: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 267: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 2, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 268: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -38882,14 +38882,14 @@ choice3: 1282509228
 handpos: 102
 bonus: 2067464798
 TEST 273: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 274: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 275: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 276: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -38902,13 +38902,13 @@ choice3: 785321911
 handpos: 321
 bonus: 1583575248
 TEST 277: +2 cards to player hand
-	hand count = -17, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 278: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 279: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 280: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -38922,7 +38922,7 @@ choice3: 565043618
 handpos: 220
 bonus: 1979662362
 TEST 281: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -67, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 282: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -38942,7 +38942,7 @@ choice3: 1145642223
 handpos: 104
 bonus: 652476622
 TEST 285: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -67, expected = -65
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 286: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38962,7 +38962,7 @@ choice3: 1857735547
 handpos: 198
 bonus: 204916953
 TEST 289: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -67, expected = -65
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 290: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -38982,7 +38982,7 @@ choice3: 954740904
 handpos: 200
 bonus: 1067501406
 TEST 293: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -67, expected = -65
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 294: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39002,7 +39002,7 @@ choice3: 2123413175
 handpos: 162
 bonus: 468050946
 TEST 297: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -67, expected = -65
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 298: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39022,7 +39022,7 @@ choice3: 608707682
 handpos: 386
 bonus: 366376340
 TEST 301: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -67, expected = -65
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 302: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39042,14 +39042,14 @@ choice3: 291709144
 handpos: 260
 bonus: 39075569
 TEST 305: +2 cards to player hand
-	hand count = -29, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 306: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 5, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 307: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 308: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -39062,17 +39062,17 @@ choice3: 1523138708
 handpos: 263
 bonus: 198482029
 TEST 309: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 310: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 5, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 311: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 312: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 3
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 1, treasures in old deck = 3
+TEST SUCCESSFULLY COMPLETED.
 cards: 14
 players 4
 current player: 1
@@ -39082,17 +39082,17 @@ choice3: 111992488
 handpos: 448
 bonus: 1816178181
 TEST 313: +2 cards to player hand
-	hand count = -17, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 314: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 5, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 315: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 316: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 3
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 1, treasures in old deck = 3
+TEST SUCCESSFULLY COMPLETED.
 cards: 15
 players 3
 current player: 1
@@ -39102,13 +39102,13 @@ choice3: 75902584
 handpos: 357
 bonus: 97563113
 TEST 317: +2 cards to player hand
-	hand count = -17, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 318: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 319: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 320: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -39142,7 +39142,7 @@ choice3: 295149501
 handpos: 72
 bonus: 1537136017
 TEST 325: +2 cards to player hand
-	hand count = -1, expected = 6
+	hand count = -67, expected = 6
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 326: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39162,7 +39162,7 @@ choice3: 708777617
 handpos: 60
 bonus: 1708520150
 TEST 329: +2 cards to player hand
-	hand count = -17, expected = -15
+	hand count = -4, expected = 3
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 330: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39182,14 +39182,14 @@ choice3: 1149912770
 handpos: 199
 bonus: 619833395
 TEST 333: +2 cards to player hand
-	hand count = -29, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 334: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 1, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 335: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 336: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -39202,13 +39202,13 @@ choice3: 15331565
 handpos: 153
 bonus: 660236958
 TEST 337: +2 cards to player hand
-	hand count = 2, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 338: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 339: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 1
+	treasures in new hand = 2, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 340: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -39242,17 +39242,17 @@ choice3: 632307137
 handpos: 89
 bonus: 973292597
 TEST 345: +2 cards to player hand
-	hand count = -17, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 346: -2 cards to player deck
-	deck count = 0, expected = 7
-TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
+	deck count = 7, expected = 7
+TEST SUCCESSFULLY COMPLETED.
 TEST 347: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 348: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 4
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 2, treasures in old deck = 4
+TEST SUCCESSFULLY COMPLETED.
 cards: 7
 players 3
 current player: 2
@@ -39262,13 +39262,13 @@ choice3: 722604840
 handpos: 448
 bonus: 1804663891
 TEST 349: +2 cards to player hand
-	hand count = -20, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 350: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 351: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 352: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -39282,7 +39282,7 @@ choice3: 193552674
 handpos: 47
 bonus: 1190034479
 TEST 353: +2 cards to player hand
-	hand count = -17, expected = 2
+	hand count = -4, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 354: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -39302,7 +39302,7 @@ choice3: 1117194678
 handpos: 7
 bonus: 444839962
 TEST 357: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -65, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 358: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -39322,7 +39322,7 @@ choice3: 1604545182
 handpos: 183
 bonus: 1168246354
 TEST 361: +2 cards to player hand
-	hand count = -17, expected = -15
+	hand count = -4, expected = -2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 362: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39342,7 +39342,7 @@ choice3: 277966130
 handpos: 104
 bonus: 1463845606
 TEST 365: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -65, expected = -63
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 366: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39362,7 +39362,7 @@ choice3: 824279283
 handpos: 107
 bonus: 2077934698
 TEST 369: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -63
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 370: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39382,13 +39382,13 @@ choice3: 57923264
 handpos: 190
 bonus: 1508069843
 TEST 373: +2 cards to player hand
-	hand count = -17, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 374: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 375: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 376: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -39402,13 +39402,13 @@ choice3: 133998749
 handpos: 332
 bonus: 456782836
 TEST 377: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 3, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 378: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 379: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 380: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -39422,7 +39422,7 @@ choice3: 2042336283
 handpos: 53
 bonus: 52492777
 TEST 381: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -61, expected = 5
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 382: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39442,7 +39442,7 @@ choice3: 1864326801
 handpos: 2
 bonus: 480480915
 TEST 385: +2 cards to player hand
-	hand count = -17, expected = -15
+	hand count = -4, expected = 3
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 386: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39462,14 +39462,14 @@ choice3: 2127756605
 handpos: 371
 bonus: 1003624879
 TEST 389: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 390: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 4, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 391: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 392: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -39482,7 +39482,7 @@ choice3: 1371346978
 handpos: 240
 bonus: 842800722
 TEST 393: +2 cards to player hand
-	hand count = -17, expected = 2
+	hand count = -4, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 394: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -39502,13 +39502,13 @@ choice3: 1015382982
 handpos: 466
 bonus: 1436118355
 TEST 397: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 5, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 398: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 399: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 2
+	treasures in new hand = 2, treasures in old hand = 2
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 400: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -39525,14 +39525,14 @@ TEST 401: +2 cards to player hand
 	hand count = 2, expected = 2
 TEST SUCCESSFULLY COMPLETED.
 TEST 402: -2 cards to player deck
-	deck count = 3, expected = 7
-TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
+	deck count = 7, expected = 7
+TEST SUCCESSFULLY COMPLETED.
 TEST 403: +2 treasure cards to player hand:
 	treasures in new hand = 2, treasures in old hand = 0
 TEST SUCCESSFULLY COMPLETED.
 TEST 404: -2 treasure cards from player deck:
-	treasures in new deck = 1, treasures in old deck = 4
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 2, treasures in old deck = 4
+TEST SUCCESSFULLY COMPLETED.
 cards: 4
 players 2
 current player: 0
@@ -39542,7 +39542,7 @@ choice3: 806925495
 handpos: 137
 bonus: 537287940
 TEST 405: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -66, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 406: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -39562,7 +39562,7 @@ choice3: 478139412
 handpos: 454
 bonus: 1485951154
 TEST 409: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -64
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 410: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39582,7 +39582,7 @@ choice3: 1505667139
 handpos: 175
 bonus: 669469803
 TEST 413: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -67
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 414: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39602,11 +39602,11 @@ choice3: 1329119433
 handpos: 196
 bonus: 969392796
 TEST 417: +2 cards to player hand
-	hand count = -17, expected = 4
+	hand count = -4, expected = 4
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 418: -2 cards to player deck
-	deck count = 0, expected = 0
-TEST SUCCESSFULLY COMPLETED.
+	deck count = 0, expected = 4
+TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 419: +2 treasure cards to player hand:
 	treasures in new hand = 0, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
@@ -39622,13 +39622,13 @@ choice3: 1356200404
 handpos: 345
 bonus: 1643780112
 TEST 421: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 5, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 422: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 423: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 424: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -39642,13 +39642,13 @@ choice3: 1327955139
 handpos: 463
 bonus: 121945358
 TEST 425: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = 5, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 426: -2 cards to player deck
 	deck count = 0, expected = -3
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 427: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 428: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -39662,7 +39662,7 @@ choice3: 1777622195
 handpos: 29
 bonus: 1597330072
 TEST 429: +2 cards to player hand
-	hand count = -17, expected = 2
+	hand count = -4, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 430: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -39682,14 +39682,14 @@ choice3: 1489680603
 handpos: 299
 bonus: 202206406
 TEST 433: +2 cards to player hand
-	hand count = -24, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 434: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 3, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 435: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 436: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -39702,13 +39702,13 @@ choice3: 576787062
 handpos: 462
 bonus: 234818394
 TEST 437: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 438: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 439: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 440: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -39722,13 +39722,13 @@ choice3: 177006710
 handpos: 387
 bonus: 1221027620
 TEST 441: +2 cards to player hand
-	hand count = -17, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 442: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 443: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 444: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -39742,14 +39742,14 @@ choice3: 1683344215
 handpos: 250
 bonus: 293230899
 TEST 445: +2 cards to player hand
-	hand count = -24, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 446: -2 cards to player deck
-	deck count = 0, expected = 7
-TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
+	deck count = 7, expected = 7
+TEST SUCCESSFULLY COMPLETED.
 TEST 447: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 448: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -39762,17 +39762,17 @@ choice3: 2041056532
 handpos: 301
 bonus: 1300634484
 TEST 449: +2 cards to player hand
-	hand count = -24, expected = -22
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 4, expected = 4
+TEST SUCCESSFULLY COMPLETED.
 TEST 450: -2 cards to player deck
-	deck count = 0, expected = -3
+	deck count = 1, expected = 4
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 451: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 452: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 0, treasures in old deck = 2
+TEST SUCCESSFULLY COMPLETED.
 cards: 13
 players 2
 current player: 1
@@ -39782,13 +39782,13 @@ choice3: 1541115054
 handpos: 418
 bonus: 2090427727
 TEST 453: +2 cards to player hand
-	hand count = -17, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 454: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 455: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 456: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -39802,13 +39802,13 @@ choice3: 1849667921
 handpos: 157
 bonus: 1687843238
 TEST 457: +2 cards to player hand
-	hand count = -24, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 458: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 459: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 460: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -39822,14 +39822,14 @@ choice3: 722772636
 handpos: 339
 bonus: 1132146387
 TEST 461: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 462: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 463: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 464: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -39842,7 +39842,7 @@ choice3: 175674504
 handpos: 38
 bonus: 893640583
 TEST 465: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -69, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 466: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -39862,7 +39862,7 @@ choice3: 217373216
 handpos: 180
 bonus: 478678911
 TEST 469: +2 cards to player hand
-	hand count = -17, expected = 3
+	hand count = -4, expected = 4
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 470: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39882,7 +39882,7 @@ choice3: 1605962799
 handpos: 274
 bonus: 1460332693
 TEST 473: +2 cards to player hand
-	hand count = -17, expected = -15
+	hand count = -4, expected = -2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 474: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39902,7 +39902,7 @@ choice3: 1181187827
 handpos: 239
 bonus: 2028920648
 TEST 477: +2 cards to player hand
-	hand count = -17, expected = -15
+	hand count = -4, expected = -2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 478: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39922,7 +39922,7 @@ choice3: 1825903616
 handpos: 26
 bonus: 873042188
 TEST 481: +2 cards to player hand
-	hand count = -24, expected = -22
+	hand count = -10, expected = 3
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 482: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -39942,13 +39942,13 @@ choice3: 1450335357
 handpos: 199
 bonus: 1669720061
 TEST 485: +2 cards to player hand
-	hand count = -64, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 486: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 487: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 488: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -39962,13 +39962,13 @@ choice3: 1675623198
 handpos: 347
 bonus: 51642740
 TEST 489: +2 cards to player hand
-	hand count = -24, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 490: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 491: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 492: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -39982,7 +39982,7 @@ choice3: 752890987
 handpos: 335
 bonus: 1404761016
 TEST 493: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -69, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 494: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -40002,7 +40002,7 @@ choice3: 631576092
 handpos: 152
 bonus: 1051134609
 TEST 497: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -67
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 498: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40022,7 +40022,7 @@ choice3: 118582180
 handpos: 195
 bonus: 185695965
 TEST 501: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -67
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 502: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40042,13 +40042,13 @@ choice3: 1490310810
 handpos: 33
 bonus: 1742102093
 TEST 505: +2 cards to player hand
-	hand count = -32, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 506: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 507: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 508: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -40062,14 +40062,14 @@ choice3: 1724508261
 handpos: 423
 bonus: 811026968
 TEST 509: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 510: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 1, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 511: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 512: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -40082,13 +40082,13 @@ choice3: 2079580133
 handpos: 210
 bonus: 2011967843
 TEST 513: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 1, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 514: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 515: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 516: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -40102,7 +40102,7 @@ choice3: 1882394948
 handpos: 483
 bonus: 1873553710
 TEST 517: +2 cards to player hand
-	hand count = -24, expected = 2
+	hand count = -10, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 518: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -40122,7 +40122,7 @@ choice3: 833964937
 handpos: 358
 bonus: 35432682
 TEST 521: +2 cards to player hand
-	hand count = -24, expected = -22
+	hand count = -10, expected = -8
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 522: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40162,7 +40162,7 @@ choice3: 61055995
 handpos: 27
 bonus: 788151257
 TEST 529: +2 cards to player hand
-	hand count = -1, expected = 5
+	hand count = -69, expected = 5
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 530: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40182,7 +40182,7 @@ choice3: 839781187
 handpos: 226
 bonus: 1642211849
 TEST 533: +2 cards to player hand
-	hand count = -24, expected = -22
+	hand count = -10, expected = -8
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 534: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40205,14 +40205,14 @@ TEST 537: +2 cards to player hand
 	hand count = 2, expected = 2
 TEST SUCCESSFULLY COMPLETED.
 TEST 538: -2 cards to player deck
-	deck count = 1, expected = 7
+	deck count = 2, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 539: +2 treasure cards to player hand:
 	treasures in new hand = 2, treasures in old hand = 0
 TEST SUCCESSFULLY COMPLETED.
 TEST 540: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 3
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 1, treasures in old deck = 3
+TEST SUCCESSFULLY COMPLETED.
 cards: 17
 players 4
 current player: 2
@@ -40222,17 +40222,17 @@ choice3: 387326555
 handpos: 315
 bonus: 738786414
 TEST 541: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 542: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 2, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 543: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 544: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 3
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 1, treasures in old deck = 3
+TEST SUCCESSFULLY COMPLETED.
 cards: 17
 players 3
 current player: 0
@@ -40242,13 +40242,13 @@ choice3: 718516835
 handpos: 5
 bonus: 1788974968
 TEST 545: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 3, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 546: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 547: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 548: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -40282,7 +40282,7 @@ choice3: 1318998931
 handpos: 419
 bonus: 751930012
 TEST 553: +2 cards to player hand
-	hand count = -32, expected = 3
+	hand count = -4, expected = 3
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 554: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40302,7 +40302,7 @@ choice3: 1658130672
 handpos: 364
 bonus: 1858056970
 TEST 557: +2 cards to player hand
-	hand count = -33, expected = 2
+	hand count = -17, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 558: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -40322,17 +40322,17 @@ choice3: 1656984894
 handpos: 407
 bonus: 1092672203
 TEST 561: +2 cards to player hand
-	hand count = -32, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 562: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 6, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 563: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 564: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 3
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 1, treasures in old deck = 3
+TEST SUCCESSFULLY COMPLETED.
 cards: 19
 players 4
 current player: 1
@@ -40342,7 +40342,7 @@ choice3: 537379669
 handpos: 438
 bonus: 655929959
 TEST 565: +2 cards to player hand
-	hand count = -32, expected = 2
+	hand count = -4, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 566: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -40362,7 +40362,7 @@ choice3: 1003751024
 handpos: 241
 bonus: 1131362208
 TEST 569: +2 cards to player hand
-	hand count = -32, expected = -30
+	hand count = -4, expected = -2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 570: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40402,7 +40402,7 @@ choice3: 519320932
 handpos: 410
 bonus: 1475149376
 TEST 577: +2 cards to player hand
-	hand count = -1, expected = 8
+	hand count = -68, expected = 8
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 578: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40442,13 +40442,13 @@ choice3: 1399629281
 handpos: 469
 bonus: 1583692161
 TEST 585: +2 cards to player hand
-	hand count = -32, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 586: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 587: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 588: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -40462,7 +40462,7 @@ choice3: 830569533
 handpos: 52
 bonus: 1018751766
 TEST 589: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -69, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 590: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -40502,17 +40502,17 @@ choice3: 69390225
 handpos: 115
 bonus: 1291987179
 TEST 597: +2 cards to player hand
-	hand count = -32, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 598: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 5, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 599: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 600: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 3
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 1, treasures in old deck = 3
+TEST SUCCESSFULLY COMPLETED.
 cards: 16
 players 3
 current player: 2
@@ -40522,7 +40522,7 @@ choice3: 867222508
 handpos: 364
 bonus: 467870645
 TEST 601: +2 cards to player hand
-	hand count = -24, expected = 2
+	hand count = -10, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 602: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -40542,13 +40542,13 @@ choice3: 163441007
 handpos: 59
 bonus: 1636805987
 TEST 605: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 5, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 606: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 607: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 608: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -40562,17 +40562,17 @@ choice3: 1403309771
 handpos: 382
 bonus: 854354786
 TEST 609: +2 cards to player hand
-	hand count = -32, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 610: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 4, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 611: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 612: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 3
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 1, treasures in old deck = 3
+TEST SUCCESSFULLY COMPLETED.
 cards: 12
 players 2
 current player: 0
@@ -40582,7 +40582,7 @@ choice3: 170855917
 handpos: 64
 bonus: 708626604
 TEST 613: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -68, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 614: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -40602,7 +40602,7 @@ choice3: 1769047703
 handpos: 444
 bonus: 2141697192
 TEST 617: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -66
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 618: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40622,7 +40622,7 @@ choice3: 624608020
 handpos: 473
 bonus: 1083285716
 TEST 621: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -67
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 622: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40642,7 +40642,7 @@ choice3: 1343109043
 handpos: 137
 bonus: 1503781616
 TEST 625: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -67
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 626: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40662,13 +40662,13 @@ choice3: 994090545
 handpos: 341
 bonus: 507052116
 TEST 629: +2 cards to player hand
-	hand count = -24, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 630: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 631: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 632: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -40682,17 +40682,17 @@ choice3: 862129862
 handpos: 203
 bonus: 1251231177
 TEST 633: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 634: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 2, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 635: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 636: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 3
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 1, treasures in old deck = 3
+TEST SUCCESSFULLY COMPLETED.
 cards: 9
 players 3
 current player: 1
@@ -40722,14 +40722,14 @@ choice3: 889936663
 handpos: 117
 bonus: 699873621
 TEST 641: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 642: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 3, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 643: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 644: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -40742,13 +40742,13 @@ choice3: 284189450
 handpos: 412
 bonus: 958953860
 TEST 645: +2 cards to player hand
-	hand count = -24, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 646: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 647: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 648: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -40762,13 +40762,13 @@ choice3: 1435963376
 handpos: 462
 bonus: 97689419
 TEST 649: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 650: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 651: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 652: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -40802,7 +40802,7 @@ choice3: 1208124539
 handpos: 4
 bonus: 784656394
 TEST 657: +2 cards to player hand
-	hand count = -32, expected = 3
+	hand count = -4, expected = 3
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 658: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40822,14 +40822,14 @@ choice3: 1746735801
 handpos: 472
 bonus: 761035109
 TEST 661: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 662: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 2, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 663: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 664: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -40842,7 +40842,7 @@ choice3: 60234484
 handpos: 459
 bonus: 1626615312
 TEST 665: +2 cards to player hand
-	hand count = -40, expected = -30
+	hand count = -17, expected = -2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 666: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -40862,13 +40862,13 @@ choice3: 626920352
 handpos: 370
 bonus: 2046907289
 TEST 669: +2 cards to player hand
-	hand count = -40, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 670: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 671: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 672: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -40882,16 +40882,16 @@ choice3: 1958500252
 handpos: 70
 bonus: 402781435
 TEST 673: +2 cards to player hand
-	hand count = -8, expected = 3
+	hand count = 3, expected = 4
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 674: -2 cards to player deck
-	deck count = 0, expected = -3
+	deck count = 0, expected = -1
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 675: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 2, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 676: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 0
+	treasures in new deck = 0, treasures in old deck = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
 cards: 19
 players 3
@@ -40902,13 +40902,13 @@ choice3: 1928715001
 handpos: 274
 bonus: 858848768
 TEST 677: +2 cards to player hand
-	hand count = -27, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 678: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 679: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 680: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -40962,13 +40962,13 @@ choice3: 1605087894
 handpos: 177
 bonus: 575675833
 TEST 689: +2 cards to player hand
-	hand count = -27, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 690: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 691: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 692: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -40982,13 +40982,13 @@ choice3: 1895260240
 handpos: 423
 bonus: 945696503
 TEST 693: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 694: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 695: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 696: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -41002,7 +41002,7 @@ choice3: 1172097768
 handpos: 424
 bonus: 1238179196
 TEST 697: +2 cards to player hand
-	hand count = -33, expected = 2
+	hand count = -17, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 698: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -41042,13 +41042,13 @@ choice3: 1127294302
 handpos: 201
 bonus: 1677738076
 TEST 705: +2 cards to player hand
-	hand count = -27, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 706: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 707: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 708: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -41062,7 +41062,7 @@ choice3: 145865641
 handpos: 332
 bonus: 821517142
 TEST 709: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -65, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 710: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -41082,13 +41082,13 @@ choice3: 1310978005
 handpos: 272
 bonus: 1705239992
 TEST 713: +2 cards to player hand
-	hand count = -27, expected = -25
+	hand count = 1, expected = 3
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 714: -2 cards to player deck
 	deck count = 0, expected = -3
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 715: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 716: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -41102,7 +41102,7 @@ choice3: 544489951
 handpos: 171
 bonus: 1428222233
 TEST 717: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -68, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 718: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -41122,14 +41122,14 @@ choice3: 2064795304
 handpos: 228
 bonus: 1932475383
 TEST 721: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 722: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 723: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 724: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -41142,7 +41142,7 @@ choice3: 925206881
 handpos: 334
 bonus: 48219788
 TEST 725: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -66
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 726: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -41162,7 +41162,7 @@ choice3: 410240143
 handpos: 367
 bonus: 1010931925
 TEST 729: +2 cards to player hand
-	hand count = -8, expected = 2
+	hand count = -4, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 730: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -41182,7 +41182,7 @@ choice3: 1825120064
 handpos: 171
 bonus: 1845108755
 TEST 733: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -69, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 734: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -41202,7 +41202,7 @@ choice3: 382816527
 handpos: 437
 bonus: 941778152
 TEST 737: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -67
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 738: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -41222,7 +41222,7 @@ choice3: 977171314
 handpos: 438
 bonus: 1252550976
 TEST 741: +2 cards to player hand
-	hand count = -27, expected = 2
+	hand count = -17, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 742: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -41242,13 +41242,13 @@ choice3: 172081785
 handpos: 9
 bonus: 763316443
 TEST 745: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 746: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 747: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 748: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -41262,13 +41262,13 @@ choice3: 1814593733
 handpos: 220
 bonus: 1245763594
 TEST 749: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = 3, expected = 8
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 750: -2 cards to player deck
 	deck count = 0, expected = -3
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 751: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 752: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -41282,7 +41282,7 @@ choice3: 1688109688
 handpos: 487
 bonus: 1980097456
 TEST 753: +2 cards to player hand
-	hand count = -27, expected = 2
+	hand count = -17, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 754: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -41302,13 +41302,13 @@ choice3: 1749529182
 handpos: 76
 bonus: 775343789
 TEST 757: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 2, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 758: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 759: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 760: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -41322,7 +41322,7 @@ choice3: 2129466214
 handpos: 373
 bonus: 1470357599
 TEST 761: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = 4
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 762: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -41342,7 +41342,7 @@ choice3: 1914480223
 handpos: 310
 bonus: 605648998
 TEST 765: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -67
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 766: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -41362,7 +41362,7 @@ choice3: 186841435
 handpos: 168
 bonus: 1209067183
 TEST 769: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -67
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 770: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -41382,14 +41382,14 @@ choice3: 649804595
 handpos: 2
 bonus: 1490655013
 TEST 773: +2 cards to player hand
-	hand count = 6, expected = 7
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 7, expected = 7
+TEST SUCCESSFULLY COMPLETED.
 TEST 774: -2 cards to player deck
-	deck count = 0, expected = 2
-TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
+	deck count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 775: +2 treasure cards to player hand:
-	treasures in new hand = 3, treasures in old hand = 2
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 4, treasures in old hand = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 776: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -41402,7 +41402,7 @@ choice3: 65675460
 handpos: 135
 bonus: 433967796
 TEST 777: +2 cards to player hand
-	hand count = -30, expected = 2
+	hand count = -15, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 778: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -41422,14 +41422,14 @@ choice3: 480432158
 handpos: 89
 bonus: 1031441869
 TEST 781: +2 cards to player hand
-	hand count = 6, expected = 7
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 7, expected = 7
+TEST SUCCESSFULLY COMPLETED.
 TEST 782: -2 cards to player deck
-	deck count = 0, expected = 2
+	deck count = 3, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 783: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 784: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -41442,7 +41442,7 @@ choice3: 1172179147
 handpos: 289
 bonus: 1065077405
 TEST 785: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -66, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 786: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -41462,7 +41462,7 @@ choice3: 490392069
 handpos: 204
 bonus: 2020426146
 TEST 789: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -64
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 790: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -41502,13 +41502,13 @@ choice3: 1946580018
 handpos: 101
 bonus: 1866817173
 TEST 797: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 2, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 798: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 799: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 800: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -41522,13 +41522,13 @@ choice3: 1763978145
 handpos: 127
 bonus: 810835272
 TEST 801: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 4, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 802: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 803: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 2
+	treasures in new hand = 2, treasures in old hand = 2
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 804: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -41542,7 +41542,7 @@ choice3: 1284738899
 handpos: 52
 bonus: 64433241
 TEST 805: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = 6
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 806: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -41562,7 +41562,7 @@ choice3: 906579395
 handpos: 370
 bonus: 1451509305
 TEST 809: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -69, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 810: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -41582,7 +41582,7 @@ choice3: 372476814
 handpos: 308
 bonus: 507767489
 TEST 813: +2 cards to player hand
-	hand count = -8, expected = 2
+	hand count = -4, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 814: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -41602,13 +41602,13 @@ choice3: 893322840
 handpos: 451
 bonus: 1455239657
 TEST 817: +2 cards to player hand
-	hand count = -30, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 818: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 819: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 820: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -41622,13 +41622,13 @@ choice3: 838638529
 handpos: 419
 bonus: 1841322516
 TEST 821: +2 cards to player hand
-	hand count = -8, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 822: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 823: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 824: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -41642,13 +41642,13 @@ choice3: 981416500
 handpos: 143
 bonus: 1659789077
 TEST 825: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 1, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 826: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 827: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 828: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -41702,13 +41702,13 @@ choice3: 2066044070
 handpos: 171
 bonus: 87971083
 TEST 837: +2 cards to player hand
-	hand count = -30, expected = 4
+	hand count = 3, expected = 4
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 838: -2 cards to player deck
 	deck count = 0, expected = 1
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 839: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 840: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -41722,14 +41722,14 @@ choice3: 1214938536
 handpos: 342
 bonus: 1582844499
 TEST 841: +2 cards to player hand
-	hand count = -1, expected = 7
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 7, expected = 7
+TEST SUCCESSFULLY COMPLETED.
 TEST 842: -2 cards to player deck
-	deck count = 0, expected = 2
+	deck count = 1, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 843: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 844: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -41742,13 +41742,13 @@ choice3: 822286565
 handpos: 141
 bonus: 1334346129
 TEST 845: +2 cards to player hand
-	hand count = -8, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 846: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 847: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 848: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -41762,13 +41762,13 @@ choice3: 788176185
 handpos: 184
 bonus: 2042494233
 TEST 849: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = 7, expected = 9
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 850: -2 cards to player deck
-	deck count = 0, expected = -3
+	deck count = 0, expected = -2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 851: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 852: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -41782,13 +41782,13 @@ choice3: 143689188
 handpos: 224
 bonus: 108628489
 TEST 853: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = 3, expected = 9
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 854: -2 cards to player deck
 	deck count = 0, expected = -3
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 855: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 2, treasures in old hand = 2
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 856: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -41805,7 +41805,7 @@ TEST 857: +2 cards to player hand
 	hand count = 2, expected = 2
 TEST SUCCESSFULLY COMPLETED.
 TEST 858: -2 cards to player deck
-	deck count = 8, expected = 7
+	deck count = 6, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 859: +2 treasure cards to player hand:
 	treasures in new hand = 2, treasures in old hand = 0
@@ -41822,13 +41822,13 @@ choice3: 1220013341
 handpos: 100
 bonus: 776767994
 TEST 861: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 862: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 863: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 864: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -41862,7 +41862,7 @@ choice3: 631228338
 handpos: 33
 bonus: 228795688
 TEST 869: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -65, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 870: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -41882,14 +41882,14 @@ choice3: 1790125963
 handpos: 242
 bonus: 1890845532
 TEST 873: +2 cards to player hand
-	hand count = 1, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 874: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 875: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 876: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -41902,13 +41902,13 @@ choice3: 1102733169
 handpos: 35
 bonus: 1692008927
 TEST 877: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 1, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 878: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 879: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 1
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 880: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -41922,7 +41922,7 @@ choice3: 1884317983
 handpos: 202
 bonus: 499403752
 TEST 881: +2 cards to player hand
-	hand count = -30, expected = 2
+	hand count = -19, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 882: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -41942,7 +41942,7 @@ choice3: 573494842
 handpos: 338
 bonus: 1752976110
 TEST 885: +2 cards to player hand
-	hand count = -30, expected = -28
+	hand count = -19, expected = -17
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 886: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -41982,13 +41982,13 @@ choice3: 486261011
 handpos: 402
 bonus: 578983096
 TEST 893: +2 cards to player hand
-	hand count = -1, expected = 8
+	hand count = 6, expected = 8
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 894: -2 cards to player deck
 	deck count = 0, expected = -3
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 895: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 2
+	treasures in new hand = 2, treasures in old hand = 2
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 896: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -42002,13 +42002,13 @@ choice3: 1195144124
 handpos: 61
 bonus: 980025676
 TEST 897: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = 4, expected = 8
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 898: -2 cards to player deck
 	deck count = 0, expected = -3
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 899: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 900: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -42022,7 +42022,7 @@ choice3: 1573235748
 handpos: 447
 bonus: 1175615105
 TEST 901: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -61, expected = 6
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 902: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -42042,7 +42042,7 @@ choice3: 206299146
 handpos: 119
 bonus: 335129104
 TEST 905: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -61, expected = -59
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 906: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -42062,7 +42062,7 @@ choice3: 606602434
 handpos: 278
 bonus: 1896041689
 TEST 909: +2 cards to player hand
-	hand count = -30, expected = 2
+	hand count = -19, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 910: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -42082,7 +42082,7 @@ choice3: 890538183
 handpos: 305
 bonus: 1985696306
 TEST 913: +2 cards to player hand
-	hand count = -33, expected = 2
+	hand count = -17, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 914: -2 cards to player deck
 	deck count = 0, expected = 7
@@ -42102,13 +42102,13 @@ choice3: 1753376286
 handpos: 407
 bonus: 216960618
 TEST 917: +2 cards to player hand
-	hand count = 1, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 918: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 919: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 2
+	treasures in new hand = 3, treasures in old hand = 2
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 920: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -42122,13 +42122,13 @@ choice3: 758871842
 handpos: 204
 bonus: 502889968
 TEST 921: +2 cards to player hand
-	hand count = -30, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 922: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 923: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 924: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -42142,13 +42142,13 @@ choice3: 657704549
 handpos: 234
 bonus: 1612859110
 TEST 925: +2 cards to player hand
-	hand count = 1, expected = 7
+	hand count = 2, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 926: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 927: +2 treasure cards to player hand:
-	treasures in new hand = 1, treasures in old hand = 2
+	treasures in new hand = 2, treasures in old hand = 2
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 928: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -42162,7 +42162,7 @@ choice3: 1266935220
 handpos: 499
 bonus: 639327633
 TEST 929: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -61, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 930: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -42202,17 +42202,17 @@ choice3: 317464731
 handpos: 385
 bonus: 54180540
 TEST 937: +2 cards to player hand
-	hand count = -30, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 938: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 3, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 939: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 940: -2 treasure cards from player deck:
-	treasures in new deck = 0, treasures in old deck = 5
-TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
+	treasures in new deck = 3, treasures in old deck = 5
+TEST SUCCESSFULLY COMPLETED.
 cards: 14
 players 2
 current player: 1
@@ -42222,13 +42222,13 @@ choice3: 415802914
 handpos: 40
 bonus: 503490881
 TEST 941: +2 cards to player hand
-	hand count = -30, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 942: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 943: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 944: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -42262,13 +42262,13 @@ choice3: 15212315
 handpos: 177
 bonus: 222617691
 TEST 949: +2 cards to player hand
-	hand count = -30, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 950: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 951: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 952: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -42282,13 +42282,13 @@ choice3: 16582775
 handpos: 242
 bonus: 420277150
 TEST 953: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 954: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 955: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 956: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -42302,13 +42302,13 @@ choice3: 425985863
 handpos: 177
 bonus: 295146233
 TEST 957: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = 5, expected = 8
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 958: -2 cards to player deck
 	deck count = 0, expected = -3
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 959: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 960: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 0
@@ -42322,7 +42322,7 @@ choice3: 1877691173
 handpos: 129
 bonus: 846219362
 TEST 961: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -65, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 962: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -42342,7 +42342,7 @@ choice3: 1541638548
 handpos: 452
 bonus: 1092819655
 TEST 965: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -67, expected = -63
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 966: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -42362,7 +42362,7 @@ choice3: 123263369
 handpos: 301
 bonus: 1398617426
 TEST 969: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -67, expected = -65
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 970: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -42382,13 +42382,13 @@ choice3: 524570746
 handpos: 481
 bonus: 1834340338
 TEST 973: +2 cards to player hand
-	hand count = -30, expected = 2
+	hand count = 1, expected = 2
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 974: -2 cards to player deck
 	deck count = 0, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 975: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 976: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -42402,14 +42402,14 @@ choice3: 158170440
 handpos: 122
 bonus: 1110832698
 TEST 977: +2 cards to player hand
-	hand count = -30, expected = 2
-TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
+	hand count = 2, expected = 2
+TEST SUCCESSFULLY COMPLETED.
 TEST 978: -2 cards to player deck
-	deck count = 0, expected = 7
+	deck count = 3, expected = 7
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 979: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
-TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
+	treasures in new hand = 2, treasures in old hand = 0
+TEST SUCCESSFULLY COMPLETED.
 TEST 980: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 2
 TEST SUCCESSFULLY COMPLETED.
@@ -42422,13 +42422,13 @@ choice3: 1054822074
 handpos: 62
 bonus: 271109373
 TEST 981: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = 6, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 982: -2 cards to player deck
 	deck count = 0, expected = 2
 TEST FAILED: 'game.deckCount[current_player] == test_game.deckCount[current_player] - cards_drawn' on line 98.
 TEST 983: +2 treasure cards to player hand:
-	treasures in new hand = 0, treasures in old hand = 0
+	treasures in new hand = 1, treasures in old hand = 0
 TEST FAILED: 'new_treasure_count == old_treasure_count+2' on line 114.
 TEST 984: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
@@ -42442,7 +42442,7 @@ choice3: 1320879199
 handpos: 429
 bonus: 1196475262
 TEST 985: +2 cards to player hand
-	hand count = -1, expected = 7
+	hand count = -66, expected = 7
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 986: -2 cards to player deck
 	deck count = 0, expected = 2
@@ -42462,7 +42462,7 @@ choice3: 371904211
 handpos: 474
 bonus: 1418239068
 TEST 989: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -64
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 990: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -42482,7 +42482,7 @@ choice3: 1445639898
 handpos: 20
 bonus: 1731917915
 TEST 993: +2 cards to player hand
-	hand count = -1, expected = 1
+	hand count = -69, expected = -67
 TEST FAILED: 'game.handCount[current_player] == test_game.handCount[current_player] + cards_drawn - cards_discarded' on line 94.
 TEST 994: -2 cards to player deck
 	deck count = 0, expected = -3
@@ -42514,14 +42514,14 @@ TEST 1000: -2 treasure cards from player deck:
 	treasures in new deck = 0, treasures in old deck = 1
 TEST FAILED: 'new_treasure_count == old_treasure_count-2' on line 130.
 File 'dominion.c'
-Lines executed:40.16% of 625
+Lines executed:25.60% of 625
 Creating 'dominion.c.gcov'
 
         -:    0:Source:dominion.c
         -:    0:Graph:dominion.gcno
         -:    0:Data:dominion.gcda
-        -:    0:Runs:11
-        -:    0:Programs:11
+        -:    0:Runs:2
+        -:    0:Programs:2
         -:    1:#include "dominion.h"
         -:    2:#include "dominion_helpers.h"
         -:    3:#include "rngs.h"
@@ -42529,13 +42529,13 @@ Creating 'dominion.c.gcov'
         -:    5:#include <math.h>
         -:    6:#include <stdlib.h>
         -:    7:
-    53008:    8:int compare(const void *a, const void *b)
+    26296:    8:int compare(const void *a, const void *b)
         -:    9:{
-    53008:   10:  if (*(int *)a > *(int *)b)
-     2147:   11:    return 1;
-    50861:   12:  if (*(int *)a < *(int *)b)
-    14257:   13:    return -1;
-    36604:   14:  return 0;
+    26296:   10:  if (*(int *)a > *(int *)b)
+     6183:   11:    return 1;
+    20113:   12:  if (*(int *)a < *(int *)b)
+     5935:   13:    return -1;
+    14178:   14:  return 0;
         -:   15:}
         -:   16:
     #####:   17:struct gameState *newGame()
@@ -42561,7 +42561,7 @@ Creating 'dominion.c.gcov'
     #####:   37:  return k;
         -:   38:}
         -:   39:
-     2508:   40:int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+      500:   40:int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
         -:   41:                   struct gameState *state)
         -:   42:{
         -:   43:
@@ -42569,26 +42569,26 @@ Creating 'dominion.c.gcov'
         -:   45:  int j;
         -:   46:  int it;
         -:   47:  //set up random number generator
-     2508:   48:  SelectStream(1);
-     2508:   49:  PutSeed((long)randomSeed);
+      500:   48:  SelectStream(1);
+      500:   49:  PutSeed((long)randomSeed);
         -:   50:
         -:   51:  //check number of players
-     2508:   52:  if (numPlayers > MAX_PLAYERS || numPlayers < 2)
+      500:   52:  if (numPlayers > MAX_PLAYERS || numPlayers < 2)
         -:   53:  {
-      655:   54:    return -1;
+      120:   54:    return -1;
         -:   55:  }
         -:   56:
         -:   57:  //set number of players
-     1853:   58:  state->numPlayers = numPlayers;
+      380:   58:  state->numPlayers = numPlayers;
         -:   59:
         -:   60:  //check selected kingdom cards are different
-    16903:   61:  for (i = 0; i < 10; i++)
+     3719:   61:  for (i = 0; i < 10; i++)
         -:   62:  {
-   171748:   63:    for (j = 0; j < 10; j++)
+    37573:   63:    for (j = 0; j < 10; j++)
         -:   64:    {
-   156698:   65:      if (j != i && kingdomCards[j] == kingdomCards[i])
+    34234:   65:      if (j != i && kingdomCards[j] == kingdomCards[i])
         -:   66:      {
-      776:   67:        return -1;
+      101:   67:        return -1;
         -:   68:      }
         -:   69:    }
         -:   70:  }
@@ -42597,66 +42597,66 @@ Creating 'dominion.c.gcov'
         -:   73:  ///////////////////////////////
         -:   74:
         -:   75:  //set number of Curse cards
-     1077:   76:  if (numPlayers == 2)
+      279:   76:  if (numPlayers == 2)
         -:   77:  {
-      370:   78:    state->supplyCount[curse] = 10;
+       94:   78:    state->supplyCount[curse] = 10;
         -:   79:  }
-      707:   80:  else if (numPlayers == 3)
+      185:   80:  else if (numPlayers == 3)
         -:   81:  {
-      363:   82:    state->supplyCount[curse] = 20;
+       92:   82:    state->supplyCount[curse] = 20;
         -:   83:  }
         -:   84:  else
         -:   85:  {
-      344:   86:    state->supplyCount[curse] = 30;
+       93:   86:    state->supplyCount[curse] = 30;
         -:   87:  }
         -:   88:
         -:   89:  //set number of Victory cards
-     1077:   90:  if (numPlayers == 2)
+      279:   90:  if (numPlayers == 2)
         -:   91:  {
-      370:   92:    state->supplyCount[estate] = 8;
-      370:   93:    state->supplyCount[duchy] = 8;
-      370:   94:    state->supplyCount[province] = 8;
+       94:   92:    state->supplyCount[estate] = 8;
+       94:   93:    state->supplyCount[duchy] = 8;
+       94:   94:    state->supplyCount[province] = 8;
         -:   95:  }
         -:   96:  else
         -:   97:  {
-      707:   98:    state->supplyCount[estate] = 12;
-      707:   99:    state->supplyCount[duchy] = 12;
-      707:  100:    state->supplyCount[province] = 12;
+      185:   98:    state->supplyCount[estate] = 12;
+      185:   99:    state->supplyCount[duchy] = 12;
+      185:  100:    state->supplyCount[province] = 12;
         -:  101:  }
         -:  102:
         -:  103:  //set number of Treasure cards
-     1077:  104:  state->supplyCount[copper] = 60 - (7 * numPlayers);
-     1077:  105:  state->supplyCount[silver] = 40;
-     1077:  106:  state->supplyCount[gold] = 30;
+      279:  104:  state->supplyCount[copper] = 60 - (7 * numPlayers);
+      279:  105:  state->supplyCount[silver] = 40;
+      279:  106:  state->supplyCount[gold] = 30;
         -:  107:
         -:  108:  //set number of Kingdom cards
-    22617:  109:  for (i = adventurer; i <= treasure_map; i++) //loop all cards
+     5859:  109:  for (i = adventurer; i <= treasure_map; i++) //loop all cards
         -:  110:  {
-   179136:  111:    for (j = 0; j < 10; j++) //loop chosen cards
+    47466:  111:    for (j = 0; j < 10; j++) //loop chosen cards
         -:  112:    {
-   167965:  113:      if (kingdomCards[j] == i)
+    44275:  113:      if (kingdomCards[j] == i)
         -:  114:      {
         -:  115:        //check if card is a 'Victory' Kingdom card
-    10369:  116:        if (kingdomCards[j] == great_hall || kingdomCards[j] == gardens)
+     2389:  116:        if (kingdomCards[j] == great_hall || kingdomCards[j] == gardens)
         -:  117:        {
-     2110:  118:          if (numPlayers == 2)
+      468:  118:          if (numPlayers == 2)
         -:  119:          {
-      352:  120:            state->supplyCount[i] = 8;
+       80:  120:            state->supplyCount[i] = 8;
         -:  121:          }
         -:  122:          else
         -:  123:          {
-      703:  124:            state->supplyCount[i] = 12;
+      154:  124:            state->supplyCount[i] = 12;
         -:  125:          }
         -:  126:        }
         -:  127:        else
         -:  128:        {
-     9314:  129:          state->supplyCount[i] = 10;
+     2155:  129:          state->supplyCount[i] = 10;
         -:  130:        }
-    10369:  131:        break;
+     2389:  131:        break;
         -:  132:      }
         -:  133:      else //card is not in the set choosen for the game
         -:  134:      {
-   157596:  135:        state->supplyCount[i] = -1;
+    41886:  135:        state->supplyCount[i] = -1;
         -:  136:      }
         -:  137:    }
         -:  138:  }
@@ -42665,36 +42665,36 @@ Creating 'dominion.c.gcov'
         -:  141:  //supply intilization complete
         -:  142:
         -:  143:  //set player decks
-     4282:  144:  for (i = 0; i < numPlayers; i++)
+     1115:  144:  for (i = 0; i < numPlayers; i++)
         -:  145:  {
-     3205:  146:    state->deckCount[i] = 0;
-    12820:  147:    for (j = 0; j < 3; j++)
+      836:  146:    state->deckCount[i] = 0;
+     3344:  147:    for (j = 0; j < 3; j++)
         -:  148:    {
-     9615:  149:      state->deck[i][j] = estate;
-     9615:  150:      state->deckCount[i]++;
+     2508:  149:      state->deck[i][j] = estate;
+     2508:  150:      state->deckCount[i]++;
         -:  151:    }
-    25640:  152:    for (j = 3; j < 10; j++)
+     6688:  152:    for (j = 3; j < 10; j++)
         -:  153:    {
-    22435:  154:      state->deck[i][j] = copper;
-    22435:  155:      state->deckCount[i]++;
+     5852:  154:      state->deck[i][j] = copper;
+     5852:  155:      state->deckCount[i]++;
         -:  156:    }
         -:  157:  }
         -:  158:
         -:  159:  //shuffle player decks
-     4282:  160:  for (i = 0; i < numPlayers; i++)
+     1115:  160:  for (i = 0; i < numPlayers; i++)
         -:  161:  {
-     3205:  162:    if (shuffle(i, state) < 0)
+      836:  162:    if (shuffle(i, state) < 0)
         -:  163:    {
     #####:  164:      return -1;
         -:  165:    }
         -:  166:  }
         -:  167:
         -:  168:  //draw player hands
-     4282:  169:  for (i = 0; i < numPlayers; i++)
+     1115:  169:  for (i = 0; i < numPlayers; i++)
         -:  170:  {
         -:  171:    //initialize hand size to zero
-     3205:  172:    state->handCount[i] = 0;
-     3205:  173:    state->discardCount[i] = 0;
+      836:  172:    state->handCount[i] = 0;
+      836:  173:    state->discardCount[i] = 0;
         -:  174:    //draw 5 cards
         -:  175:    // for (j = 0; j < 5; j++)
         -:  176:    //	{
@@ -42703,63 +42703,63 @@ Creating 'dominion.c.gcov'
         -:  179:  }
         -:  180:
         -:  181:  //set embargo tokens to 0 for all supply piles
-    30156:  182:  for (i = 0; i <= treasure_map; i++)
+     7812:  182:  for (i = 0; i <= treasure_map; i++)
         -:  183:  {
-    29079:  184:    state->embargoTokens[i] = 0;
+     7533:  184:    state->embargoTokens[i] = 0;
         -:  185:  }
         -:  186:
         -:  187:  //initialize first player's turn
-     1077:  188:  state->outpostPlayed = 0;
-     1077:  189:  state->phase = 0;
-     1077:  190:  state->numActions = 1;
-     1077:  191:  state->numBuys = 1;
-     1077:  192:  state->playedCardCount = 0;
-     1077:  193:  state->whoseTurn = 0;
-     1077:  194:  state->handCount[state->whoseTurn] = 0;
+      279:  188:  state->outpostPlayed = 0;
+      279:  189:  state->phase = 0;
+      279:  190:  state->numActions = 1;
+      279:  191:  state->numBuys = 1;
+      279:  192:  state->playedCardCount = 0;
+      279:  193:  state->whoseTurn = 0;
+      279:  194:  state->handCount[state->whoseTurn] = 0;
         -:  195:  //int it; move to top
         -:  196:
         -:  197:  //Moved draw cards to here, only drawing at the start of a turn
-     6462:  198:  for (it = 0; it < 5; it++)
+     1674:  198:  for (it = 0; it < 5; it++)
         -:  199:  {
-     5385:  200:    drawCard(state->whoseTurn, state);
+     1395:  200:    drawCard(state->whoseTurn, state);
         -:  201:  }
         -:  202:
-     1077:  203:  updateCoins(state->whoseTurn, state, 0);
+      279:  203:  updateCoins(state->whoseTurn, state, 0);
         -:  204:
-     1077:  205:  return 0;
+      279:  205:  return 0;
         -:  206:}
         -:  207:
-    12538:  208:int shuffle(int player, struct gameState *state)
+     8508:  208:int shuffle(int player, struct gameState *state)
         -:  209:{
         -:  210:
         -:  211:  int newDeck[MAX_DECK];
-    12538:  212:  int newDeckPos = 0;
+     8508:  212:  int newDeckPos = 0;
         -:  213:  int card;
         -:  214:  int i;
         -:  215:
-    12538:  216:  if (state->deckCount[player] < 1)
-     9249:  217:    return -1;
-     3289:  218:  qsort((void *)(state->deck[player]), state->deckCount[player], sizeof(int), compare);
+     8508:  216:  if (state->deckCount[player] < 1)
+     7589:  217:    return -1;
+      919:  218:  qsort((void *)(state->deck[player]), state->deckCount[player], sizeof(int), compare);
         -:  219:  /* SORT CARDS IN DECK TO ENSURE DETERMINISM! */
         -:  220:
-    36838:  221:  while (state->deckCount[player] > 0)
+    12538:  221:  while (state->deckCount[player] > 0)
         -:  222:  {
-    33549:  223:    card = floor(Random() * state->deckCount[player]);
-    33549:  224:    newDeck[newDeckPos] = state->deck[player][card];
-    33549:  225:    newDeckPos++;
-   139170:  226:    for (i = card; i < state->deckCount[player] - 1; i++)
+    11619:  223:    card = floor(Random() * state->deckCount[player]);
+    11619:  224:    newDeck[newDeckPos] = state->deck[player][card];
+    11619:  225:    newDeckPos++;
+    72387:  226:    for (i = card; i < state->deckCount[player] - 1; i++)
         -:  227:    {
-   105621:  228:      state->deck[player][i] = state->deck[player][i + 1];
+    60768:  228:      state->deck[player][i] = state->deck[player][i + 1];
         -:  229:    }
-    33549:  230:    state->deckCount[player]--;
+    11619:  230:    state->deckCount[player]--;
         -:  231:  }
-    36838:  232:  for (i = 0; i < newDeckPos; i++)
+    12538:  232:  for (i = 0; i < newDeckPos; i++)
         -:  233:  {
-    33549:  234:    state->deck[player][i] = newDeck[i];
-    33549:  235:    state->deckCount[player]++;
+    11619:  234:    state->deck[player][i] = newDeck[i];
+    11619:  235:    state->deckCount[player]++;
         -:  236:  }
         -:  237:
-     3289:  238:  return 0;
+      919:  238:  return 0;
         -:  239:}
         -:  240:
     #####:  241:int playCard(int handPos, int choice1, int choice2, int choice3, struct gameState *state)
@@ -42862,113 +42862,113 @@ Creating 'dominion.c.gcov'
     #####:  338:  return state->hand[currentPlayer][handPos];
         -:  339:}
         -:  340:
-        6:  341:int supplyCount(int card, struct gameState *state)
+    #####:  341:int supplyCount(int card, struct gameState *state)
         -:  342:{
-        6:  343:  return state->supplyCount[card];
+    #####:  343:  return state->supplyCount[card];
         -:  344:}
         -:  345:
-       27:  346:int fullDeckCount(int player, int card, struct gameState *state)
+    #####:  346:int fullDeckCount(int player, int card, struct gameState *state)
         -:  347:{
         -:  348:  int i;
-       27:  349:  int count = 0;
+    #####:  349:  int count = 0;
         -:  350:
-      162:  351:  for (i = 0; i < state->deckCount[player]; i++)
+    #####:  351:  for (i = 0; i < state->deckCount[player]; i++)
         -:  352:  {
-      135:  353:    if (state->deck[player][i] == card)
-       49:  354:      count++;
+    #####:  353:    if (state->deck[player][i] == card)
+    #####:  354:      count++;
         -:  355:  }
         -:  356:
-      162:  357:  for (i = 0; i < state->handCount[player]; i++)
+    #####:  357:  for (i = 0; i < state->handCount[player]; i++)
         -:  358:  {
-      135:  359:    if (state->hand[player][i] == card)
-       43:  360:      count++;
+    #####:  359:    if (state->hand[player][i] == card)
+    #####:  360:      count++;
         -:  361:  }
         -:  362:
-      27*:  363:  for (i = 0; i < state->discardCount[player]; i++)
+    #####:  363:  for (i = 0; i < state->discardCount[player]; i++)
         -:  364:  {
     #####:  365:    if (state->discard[player][i] == card)
     #####:  366:      count++;
         -:  367:  }
         -:  368:
-       27:  369:  return count;
+    #####:  369:  return count;
         -:  370:}
         -:  371:
-     2515:  372:int whoseTurn(struct gameState *state)
+      500:  372:int whoseTurn(struct gameState *state)
         -:  373:{
-     2515:  374:  return state->whoseTurn;
+      500:  374:  return state->whoseTurn;
         -:  375:}
         -:  376:
-        6:  377:int endTurn(struct gameState *state)
+    #####:  377:int endTurn(struct gameState *state)
         -:  378:{
         -:  379:  int k;
         -:  380:  int i;
-        6:  381:  int currentPlayer = whoseTurn(state);
+    #####:  381:  int currentPlayer = whoseTurn(state);
         -:  382:
         -:  383:  //Discard hand
-       36:  384:  for (i = 0; i < state->handCount[currentPlayer]; i++)
+    #####:  384:  for (i = 0; i < state->handCount[currentPlayer]; i++)
         -:  385:  {
-       30:  386:    state->discard[currentPlayer][state->discardCount[currentPlayer]++] = state->hand[currentPlayer][i]; //Discard
-       30:  387:    state->hand[currentPlayer][i] = -1;                                                                  //Set card to -1
+    #####:  386:    state->discard[currentPlayer][state->discardCount[currentPlayer]++] = state->hand[currentPlayer][i]; //Discard
+    #####:  387:    state->hand[currentPlayer][i] = -1;                                                                  //Set card to -1
         -:  388:  }
-        6:  389:  state->handCount[currentPlayer] = 0; //Reset hand count
+    #####:  389:  state->handCount[currentPlayer] = 0; //Reset hand count
         -:  390:
         -:  391:  //Code for determining the player
-        6:  392:  if (currentPlayer < (state->numPlayers - 1))
+    #####:  392:  if (currentPlayer < (state->numPlayers - 1))
         -:  393:  {
-        5:  394:    state->whoseTurn = currentPlayer + 1; //Still safe to increment
+    #####:  394:    state->whoseTurn = currentPlayer + 1; //Still safe to increment
         -:  395:  }
         -:  396:  else
         -:  397:  {
-        1:  398:    state->whoseTurn = 0; //Max player has been reached, loop back around to player 1
+    #####:  398:    state->whoseTurn = 0; //Max player has been reached, loop back around to player 1
         -:  399:  }
         -:  400:
-        6:  401:  state->outpostPlayed = 0;
-        6:  402:  state->phase = 0;
-        6:  403:  state->numActions = 1;
-        6:  404:  state->coins = 0;
-        6:  405:  state->numBuys = 1;
-        6:  406:  state->playedCardCount = 0;
-        6:  407:  state->handCount[state->whoseTurn] = 0;
+    #####:  401:  state->outpostPlayed = 0;
+    #####:  402:  state->phase = 0;
+    #####:  403:  state->numActions = 1;
+    #####:  404:  state->coins = 0;
+    #####:  405:  state->numBuys = 1;
+    #####:  406:  state->playedCardCount = 0;
+    #####:  407:  state->handCount[state->whoseTurn] = 0;
         -:  408:
         -:  409:  //int k; move to top
         -:  410:  //Next player draws hand
-       36:  411:  for (k = 0; k < 5; k++)
+    #####:  411:  for (k = 0; k < 5; k++)
         -:  412:  {
-       30:  413:    drawCard(state->whoseTurn, state); //Draw a card
+    #####:  413:    drawCard(state->whoseTurn, state); //Draw a card
         -:  414:  }
         -:  415:
         -:  416:  //Update money
-        6:  417:  updateCoins(state->whoseTurn, state, 0);
+    #####:  417:  updateCoins(state->whoseTurn, state, 0);
         -:  418:
-        6:  419:  return 0;
+    #####:  419:  return 0;
         -:  420:}
         -:  421:
-    27602:  422:int isGameOver(struct gameState *state)
+    #####:  422:int isGameOver(struct gameState *state)
         -:  423:{
         -:  424:  int i;
         -:  425:  int j;
         -:  426:
         -:  427:  //if stack of Province cards is empty, the game ends
-    27602:  428:  if (state->supplyCount[province] == 0)
+    #####:  428:  if (state->supplyCount[province] == 0)
         -:  429:  {
-     1657:  430:    return 1;
+    #####:  430:    return 1;
         -:  431:  }
         -:  432:
         -:  433:  //if three supply pile are at 0, the game ends
-    25945:  434:  j = 0;
-   674570:  435:  for (i = 0; i < 25; i++)
+    #####:  434:  j = 0;
+    #####:  435:  for (i = 0; i < 25; i++)
         -:  436:  {
-   648625:  437:    if (state->supplyCount[i] == 0)
+    #####:  437:    if (state->supplyCount[i] == 0)
         -:  438:    {
-    36432:  439:      j++;
+    #####:  439:      j++;
         -:  440:    }
         -:  441:  }
-    25945:  442:  if (j >= 3)
+    #####:  442:  if (j >= 3)
         -:  443:  {
-    12144:  444:    return 1;
+    #####:  444:    return 1;
         -:  445:  }
         -:  446:
-    13801:  447:  return 0;
+    #####:  447:  return 0;
         -:  448:}
         -:  449:
     #####:  450:int scoreFor(int player, struct gameState *state)
@@ -43135,74 +43135,74 @@ Creating 'dominion.c.gcov'
     #####:  611:  return 0;
         -:  612:}
         -:  613:
-    20126:  614:int drawCard(int player, struct gameState *state)
+     9910:  614:int drawCard(int player, struct gameState *state)
         -:  615:{
         -:  616:  int count;
         -:  617:  int deckCounter;
-    20126:  618:  if (state->deckCount[player] <= 0)
+     9910:  618:  if (state->deckCount[player] <= 0)
         -:  619:  { //Deck is empty
         -:  620:
         -:  621:    //Step 1 Shuffle the discard pile back into a deck
         -:  622:    int i;
         -:  623:    //Move discard to deck
-     7131:  624:    for (i = 0; i < state->discardCount[player]; i++)
+     7095:  624:    for (i = 0; i < state->discardCount[player]; i++)
         -:  625:    {
-     1499:  626:      state->deck[player][i] = state->discard[player][i];
-     1499:  627:      state->discard[player][i] = -1;
+     3259:  626:      state->deck[player][i] = state->discard[player][i];
+     3259:  627:      state->discard[player][i] = -1;
         -:  628:    }
         -:  629:
-     5632:  630:    state->deckCount[player] = state->discardCount[player];
-     5632:  631:    state->discardCount[player] = 0; //Reset discard
+     3836:  630:    state->deckCount[player] = state->discardCount[player];
+     3836:  631:    state->discardCount[player] = 0; //Reset discard
         -:  632:
         -:  633:    //Shufffle the deck
-     5632:  634:    shuffle(player, state); //Shuffle the deck up and make it so that we can draw
+     3836:  634:    shuffle(player, state); //Shuffle the deck up and make it so that we can draw
         -:  635:
         -:  636:    if (DEBUG)
         -:  637:    { //Debug statements
         -:  638:      printf("Deck count now: %d\n", state->deckCount[player]);
         -:  639:    }
         -:  640:
-     5632:  641:    state->discardCount[player] = 0;
+     3836:  641:    state->discardCount[player] = 0;
         -:  642:
         -:  643:    //Step 2 Draw Card
-     5632:  644:    count = state->handCount[player]; //Get current player's hand count
+     3836:  644:    count = state->handCount[player]; //Get current player's hand count
         -:  645:
         -:  646:    if (DEBUG)
         -:  647:    { //Debug statements
         -:  648:      printf("Current hand count: %d\n", count);
         -:  649:    }
         -:  650:
-     5632:  651:    deckCounter = state->deckCount[player]; //Create a holder for the deck count
+     3836:  651:    deckCounter = state->deckCount[player]; //Create a holder for the deck count
         -:  652:
-     5632:  653:    if (deckCounter == 0)
-     5548:  654:      return -1;
+     3836:  653:    if (deckCounter == 0)
+     3753:  654:      return -1;
         -:  655:
-       84:  656:    state->hand[player][count] = state->deck[player][deckCounter - 1]; //Add card to hand
-       84:  657:    state->deckCount[player]--;
-       84:  658:    state->handCount[player]++; //Increment hand count
+       83:  656:    state->hand[player][count] = state->deck[player][deckCounter - 1]; //Add card to hand
+       83:  657:    state->deckCount[player]--;
+       83:  658:    state->handCount[player]++; //Increment hand count
         -:  659:  }
         -:  660:
         -:  661:  else
         -:  662:  {
-    14494:  663:    int count = state->handCount[player]; //Get current hand count for player
+     6074:  663:    int count = state->handCount[player]; //Get current hand count for player
         -:  664:    int deckCounter;
         -:  665:    if (DEBUG)
         -:  666:    { //Debug statements
         -:  667:      printf("Current hand count: %d\n", count);
         -:  668:    }
         -:  669:
-    14494:  670:    deckCounter = state->deckCount[player];                            //Create holder for the deck count
-    14494:  671:    state->hand[player][count] = state->deck[player][deckCounter - 1]; //Add card to the hand
-    14494:  672:    state->deckCount[player]--;
-    14494:  673:    state->handCount[player]++; //Increment hand count
+     6074:  670:    deckCounter = state->deckCount[player];                            //Create holder for the deck count
+     6074:  671:    state->hand[player][count] = state->deck[player][deckCounter - 1]; //Add card to the hand
+     6074:  672:    state->deckCount[player]--;
+     6074:  673:    state->handCount[player]++; //Increment hand count
         -:  674:  }
         -:  675:
-    14578:  676:  return 0;
+     6157:  676:  return 0;
         -:  677:}
         -:  678:
-       12:  679:int getCost(int cardNumber)
+    #####:  679:int getCost(int cardNumber)
         -:  680:{
-       12:  681:  switch (cardNumber)
+    #####:  681:  switch (cardNumber)
         -:  682:  {
     #####:  683:  case curse:
     #####:  684:    return 0;
@@ -43212,12 +43212,12 @@ Creating 'dominion.c.gcov'
     #####:  688:    return 5;
     #####:  689:  case province:
     #####:  690:    return 8;
-        2:  691:  case copper:
-        2:  692:    return 0;
-        5:  693:  case silver:
-        5:  694:    return 3;
-        5:  695:  case gold:
-        5:  696:    return 6;
+    #####:  691:  case copper:
+    #####:  692:    return 0;
+    #####:  693:  case silver:
+    #####:  694:    return 3;
+    #####:  695:  case gold:
+    #####:  696:    return 6;
     #####:  697:  case adventurer:
     #####:  698:    return 6;
     #####:  699:  case council_room:
@@ -43263,55 +43263,55 @@ Creating 'dominion.c.gcov'
     #####:  739:  return -1;
         -:  740:}
         -:  741:
-      251:  742:int adventurerEffect(int currentPlayer, int tempHand[], int cardDrawn, struct gameState *state){
-      251:  743:  int tempHandCounter = 0; 
-      251:  744:  int drawnTreasure = 0; 
-     6702:  745:  while (drawnTreasure < 2)
+      250:  742:int adventurerEffect(int currentPlayer, int tempHand[], int cardDrawn, struct gameState *state){
+      250:  743:  int tempHandCounter = 0; 
+      250:  744:  int drawnTreasure = 0; 
+     8515:  745:  while (drawnTreasure < 2)
         -:  746:  {
-     6451:  747:    if (state->deckCount[currentPlayer] < 1)
+     8265:  747:    if (state->deckCount[currentPlayer] < 1)
         -:  748:    { //if the deck is empty we need to shuffle discard and add to deck
-     3701:  749:      shuffle(currentPlayer, state);
+     3836:  749:      shuffle(currentPlayer, state);
         -:  750:    }
-     6451:  751:    drawCard(currentPlayer, state);
-     6451:  752:    cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer] - 1]; //top card of hand is most recently drawn card.
-     6451:  753:    if (cardDrawn == copper) // **BUG** should also check for silver and gold 
-      502:  754:      drawnTreasure++;
+     8265:  751:    drawCard(currentPlayer, state);
+     8265:  752:    cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer] - 1]; //top card of hand is most recently drawn card.
+     8265:  753:    if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold) // **BUG** should also check for silver and gold 
+      500:  754:      drawnTreasure++;
         -:  755:    else
         -:  756:    {
-     5949:  757:      tempHand[tempHandCounter] = cardDrawn;
-     5949:  758:      state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
-     5949:  759:      tempHandCounter++;
+     7765:  757:      tempHand[tempHandCounter] = cardDrawn;
+     7765:  758:      state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+     7765:  759:      tempHandCounter++;
         -:  760:    }
         -:  761:  }
-     6200:  762:  while (tempHandCounter - 1 >= 0)
+     8015:  762:  while (tempHandCounter - 1 >= 0)
         -:  763:  {
-     5949:  764:    state->discard[currentPlayer][state->discardCount[currentPlayer]++] = tempHand[tempHandCounter - 1]; // discard all cards in play that have been drawn
-     5949:  765:    tempHandCounter = tempHandCounter - 1;
+     7765:  764:    state->discard[currentPlayer][state->discardCount[currentPlayer]++] = tempHand[tempHandCounter - 1]; // discard all cards in play that have been drawn
+     7765:  765:    tempHandCounter = tempHandCounter - 1;
         -:  766:  }
-      251:  767:  return 0;
+      250:  767:  return 0;
         -:  768:}
         -:  769:
-        1:  770:int councilRoomEffect(int currentPlayer, int handPos, struct gameState *state){
+    #####:  770:int councilRoomEffect(int currentPlayer, int handPos, struct gameState *state){
         -:  771:    //+4 Cards
-        5:  772:    for (int i = 0; i < 4; i++)
+    #####:  772:    for (int i = 0; i < 4; i++)
         -:  773:    {
-        4:  774:      drawCard(currentPlayer, state);
+    #####:  774:      drawCard(currentPlayer, state);
         -:  775:    }
         -:  776:
         -:  777:    //+1 Buy
-        1:  778:    state->numBuys++;
+    #####:  778:    state->numBuys++;
         -:  779:
         -:  780:    //Each other player draws a card
-        3:  781:    for (int i = 0; i < state->numPlayers; i++)
+    #####:  781:    for (int i = 0; i < state->numPlayers; i++)
         -:  782:    {
         -:  783:      //if (i != currentPlayer)
-        2:  784:        drawCard(i, state); // ** BUG ** should exclude the current player from drawing a card
+    #####:  784:        drawCard(i, state); // ** BUG ** should exclude the current player from drawing a card
         -:  785:    }
         -:  786:
         -:  787:    //put played card in played card pile
-        1:  788:    discardCard(handPos, currentPlayer, state, 0);
+    #####:  788:    discardCard(handPos, currentPlayer, state, 0);
         -:  789:
-        1:  790:    return 0; 
+    #####:  790:    return 0; 
         -:  791:}
         -:  792:
     #####:  793:int feastEffect(int choice1, int currentPlayer, int tempHand[], struct gameState *state){
@@ -43377,15 +43377,15 @@ Creating 'dominion.c.gcov'
     #####:  853:    return 0;
         -:  854:}
         -:  855:
-        6:  856:int mineEffect(int choice1, int choice2, int currentPlayer, int handPos, struct gameState *state){
-        6:  857:    int j = state->hand[currentPlayer][choice1]; //store card we will trash
+    #####:  856:int mineEffect(int choice1, int choice2, int currentPlayer, int handPos, struct gameState *state){
+    #####:  857:    int j = state->hand[currentPlayer][choice1]; //store card we will trash
         -:  858:
-        6:  859:    if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
+    #####:  859:    if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
         -:  860:    {
     #####:  861:      return -1;
         -:  862:    }
         -:  863:
-        6:  864:    if (choice2 > treasure_map || choice2 < curse)
+    #####:  864:    if (choice2 > treasure_map || choice2 < curse)
         -:  865:    {
     #####:  866:      return -1;
         -:  867:    }
@@ -43396,67 +43396,67 @@ Creating 'dominion.c.gcov'
         -:  872:      return -1;
         -:  873:    }*/
         -:  874:
-        6:  875:    gainCard(choice2, state, 2, currentPlayer);
+    #####:  875:    gainCard(choice2, state, 2, currentPlayer);
         -:  876:
         -:  877:    //discard card from hand
-        6:  878:    discardCard(handPos, currentPlayer, state, 0);
+    #####:  878:    discardCard(handPos, currentPlayer, state, 0);
         -:  879:
         -:  880:    //discard trashed card
-       18:  881:    for (int i = 0; i < state->handCount[currentPlayer]; i++)
+    #####:  881:    for (int i = 0; i < state->handCount[currentPlayer]; i++)
         -:  882:    {
-       16:  883:      if (state->hand[currentPlayer][i] == j)
+    #####:  883:      if (state->hand[currentPlayer][i] == j)
         -:  884:      {
-        4:  885:        discardCard(i, currentPlayer, state, 0);
-        4:  886:        break;
+    #####:  885:        discardCard(i, currentPlayer, state, 0);
+    #####:  886:        break;
         -:  887:      }
         -:  888:    }
         -:  889:
-        6:  890:    return 0;
+    #####:  890:    return 0;
         -:  891:}
         -:  892:
-     2001:  893:int smithyEffect(int currentPlayer, int handPos, struct gameState *state){
+    #####:  893:int smithyEffect(int currentPlayer, int handPos, struct gameState *state){
         -:  894:    //+3 Cards
-    10005:  895:    for (int i = 0; i < 4; i++)
+    #####:  895:    for (int i = 0; i < 3; i++)
         -:  896:    {
-     8004:  897:      drawCard(currentPlayer, state);
+    #####:  897:      drawCard(currentPlayer, state);
         -:  898:    }
         -:  899:
         -:  900:    //discard card from hand
-     2001:  901:    discardCard(handPos, currentPlayer, state, 0);
-     2001:  902:    return 0;
+    #####:  901:    discardCard(handPos, currentPlayer, state, 0);
+    #####:  902:    return 0;
         -:  903:}
         -:  904:
-     2509:  905:int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
+      500:  905:int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
         -:  906:{
         -:  907:  int i;
         -:  908:  int j;
         -:  909:  int k;
         -:  910:  int index;
-     2509:  911:  int currentPlayer = whoseTurn(state);
-     2509:  912:  int nextPlayer = currentPlayer + 1;
+      500:  911:  int currentPlayer = whoseTurn(state);
+      500:  912:  int nextPlayer = currentPlayer + 1;
         -:  913:
-     2509:  914:  int tributeRevealedCards[2] = {-1, -1};
+      500:  914:  int tributeRevealedCards[2] = {-1, -1};
         -:  915:  int tempHand[MAX_HAND]; // moved above the if statement
-     2509:  916:  int cardDrawn = -1; 
+      500:  916:  int cardDrawn = -1; 
         -:  917:  
-     2509:  918:  if (nextPlayer > (state->numPlayers - 1))
+      500:  918:  if (nextPlayer > (state->numPlayers - 1))
         -:  919:  {
-      669:  920:    nextPlayer = 0;
+      157:  920:    nextPlayer = 0;
         -:  921:  }
         -:  922:
         -:  923:  //uses switch to select card and perform actions
-     2509:  924:  switch (card)
+      500:  924:  switch (card)
         -:  925:  {
-      251:  926:  case adventurer:
-      251:  927:    return adventurerEffect(currentPlayer, tempHand, cardDrawn, state);
-        1:  928:  case council_room:
-        1:  929:    return councilRoomEffect(currentPlayer, handPos, state); 
+      250:  926:  case adventurer:
+      250:  927:    return adventurerEffect(currentPlayer, tempHand, cardDrawn, state);
+    #####:  928:  case council_room:
+    #####:  929:    return councilRoomEffect(currentPlayer, handPos, state); 
     #####:  930:  case feast:
     #####:  931:    return feastEffect(choice1, currentPlayer, tempHand, state); 
     #####:  932:  case gardens:
     #####:  933:    return -1;
-        6:  934:  case mine:
-        6:  935:    return mineEffect(choice1, choice2, currentPlayer, handPos, state); 
+    #####:  934:  case mine:
+    #####:  935:    return mineEffect(choice1, choice2, currentPlayer, handPos, state); 
         -:  936:
     #####:  937:  case remodel: 
     #####:  938:    j = state->hand[currentPlayer][choice1]; //store card we will trash
@@ -43482,8 +43482,8 @@ Creating 'dominion.c.gcov'
         -:  958:    }
         -:  959:
     #####:  960:    return 0;
-     2001:  961:  case smithy:
-     2001:  962:    return smithyEffect(currentPlayer, handPos, state); 
+    #####:  961:  case smithy:
+    #####:  962:    return smithyEffect(currentPlayer, handPos, state); 
         -:  963:
       250:  964:  case village:
         -:  965:    //+1 Card
@@ -43892,27 +43892,27 @@ Creating 'dominion.c.gcov'
     #####: 1368:  return -1;
         -: 1369:}
         -: 1370:
-     2262: 1371:int discardCard(int handPos, int currentPlayer, struct gameState *state, int trashFlag)
+      250: 1371:int discardCard(int handPos, int currentPlayer, struct gameState *state, int trashFlag)
         -: 1372:{
         -: 1373:
         -: 1374:  //if card is not trashed, added to Played pile
-     2262: 1375:  if (trashFlag < 1)
+      250: 1375:  if (trashFlag < 1)
         -: 1376:  {
         -: 1377:    //add card to played pile
-     2262: 1378:    state->playedCards[state->playedCardCount] = state->hand[currentPlayer][handPos];
-     2262: 1379:    state->playedCardCount++;
+      250: 1378:    state->playedCards[state->playedCardCount] = state->hand[currentPlayer][handPos];
+      250: 1379:    state->playedCardCount++;
         -: 1380:  }
         -: 1381:
         -: 1382:  //set played card to -1
-     2262: 1383:  state->hand[currentPlayer][handPos] = -1;
+      250: 1383:  state->hand[currentPlayer][handPos] = -1;
         -: 1384:
         -: 1385:  //remove card from player's hand
-     2262: 1386:  if (handPos == (state->handCount[currentPlayer] - 1)) //last card in hand array is played
+      250: 1386:  if (handPos == (state->handCount[currentPlayer] - 1)) //last card in hand array is played
         -: 1387:  {
         -: 1388:    //reduce number of cards in hand
-        5: 1389:    state->handCount[currentPlayer]--;
+    #####: 1389:    state->handCount[currentPlayer]--;
         -: 1390:  }
-     2257: 1391:  else if (state->handCount[currentPlayer] == 1) //only one card in hand
+      250: 1391:  else if (state->handCount[currentPlayer] == 1) //only one card in hand
         -: 1392:  {
         -: 1393:    //reduce number of cards in hand
       122: 1394:    state->handCount[currentPlayer]--;
@@ -43920,22 +43920,22 @@ Creating 'dominion.c.gcov'
         -: 1396:  else
         -: 1397:  {
         -: 1398:    //replace discarded card with last card in hand
-     2135: 1399:    state->hand[currentPlayer][handPos] = state->hand[currentPlayer][(state->handCount[currentPlayer] - 1)];
+      128: 1399:    state->hand[currentPlayer][handPos] = state->hand[currentPlayer][(state->handCount[currentPlayer] - 1)];
         -: 1400:    //set last card to -1
-     2135: 1401:    state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = -1;
+      128: 1401:    state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = -1;
         -: 1402:    //reduce number of cards in hand
-     2135: 1403:    state->handCount[currentPlayer]--;
+      128: 1403:    state->handCount[currentPlayer]--;
         -: 1404:  }
         -: 1405:
-     2262: 1406:  return 0;
+      250: 1406:  return 0;
         -: 1407:}
         -: 1408:
-        6: 1409:int gainCard(int supplyPos, struct gameState *state, int toFlag, int player)
+    #####: 1409:int gainCard(int supplyPos, struct gameState *state, int toFlag, int player)
         -: 1410:{
         -: 1411:  //Note: supplyPos is enum of choosen card
         -: 1412:
         -: 1413:  //check if supply pile is empty (0) or card is not used in game (-1)
-        6: 1414:  if (supplyCount(supplyPos, state) < 1)
+    #####: 1414:  if (supplyCount(supplyPos, state) < 1)
         -: 1415:  {
     #####: 1416:    return -1;
         -: 1417:  }
@@ -43945,15 +43945,15 @@ Creating 'dominion.c.gcov'
         -: 1421:  // toFlag = 1 : add to deck
         -: 1422:  // toFlag = 2 : add to hand
         -: 1423:
-        6: 1424:  if (toFlag == 1)
+    #####: 1424:  if (toFlag == 1)
         -: 1425:  {
     #####: 1426:    state->deck[player][state->deckCount[player]] = supplyPos;
     #####: 1427:    state->deckCount[player]++;
         -: 1428:  }
-        6: 1429:  else if (toFlag == 2)
+    #####: 1429:  else if (toFlag == 2)
         -: 1430:  {
-        6: 1431:    state->hand[player][state->handCount[player]] = supplyPos;
-        6: 1432:    state->handCount[player]++;
+    #####: 1431:    state->hand[player][state->handCount[player]] = supplyPos;
+    #####: 1432:    state->handCount[player]++;
         -: 1433:  }
         -: 1434:  else
         -: 1435:  {
@@ -43962,39 +43962,39 @@ Creating 'dominion.c.gcov'
         -: 1438:  }
         -: 1439:
         -: 1440:  //decrease number in supply pile
-        6: 1441:  state->supplyCount[supplyPos]--;
+    #####: 1441:  state->supplyCount[supplyPos]--;
         -: 1442:
-        6: 1443:  return 0;
+    #####: 1443:  return 0;
         -: 1444:}
         -: 1445:
-     1090: 1446:int updateCoins(int player, struct gameState *state, int bonus)
+      279: 1446:int updateCoins(int player, struct gameState *state, int bonus)
         -: 1447:{
         -: 1448:  int i;
         -: 1449:
         -: 1450:  //reset coin count
-     1090: 1451:  state->coins = 0;
+      279: 1451:  state->coins = 0;
         -: 1452:
         -: 1453:  //add coins for each Treasure card in player's hand
-     6535: 1454:  for (i = 0; i < state->handCount[player]; i++)
+     1674: 1454:  for (i = 0; i < state->handCount[player]; i++)
         -: 1455:  {
-     5445: 1456:    if (state->hand[player][i] == copper)
+     1395: 1456:    if (state->hand[player][i] == copper)
         -: 1457:    {
-     4331: 1458:      state->coins += 1;
+      837: 1458:      state->coins += 1;
         -: 1459:    }
-     1114: 1460:    else if (state->hand[player][i] == silver)
+      558: 1460:    else if (state->hand[player][i] == silver)
         -: 1461:    {
-       11: 1462:      state->coins += 2;
+    #####: 1462:      state->coins += 2;
         -: 1463:    }
-     1103: 1464:    else if (state->hand[player][i] == gold)
+      558: 1464:    else if (state->hand[player][i] == gold)
         -: 1465:    {
-        9: 1466:      state->coins += 3;
+    #####: 1466:      state->coins += 3;
         -: 1467:    }
         -: 1468:  }
         -: 1469:
         -: 1470:  //add bonus
-     1090: 1471:  state->coins += bonus;
+      279: 1471:  state->coins += bonus;
         -: 1472:
-     1090: 1473:  return 0;
+      279: 1473:  return 0;
         -: 1474:}
         -: 1475:
         -: 1476://end of dominion.c

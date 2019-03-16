@@ -750,7 +750,7 @@ int adventurerEffect(int currentPlayer, int tempHand[], int cardDrawn, struct ga
     }
     drawCard(currentPlayer, state);
     cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer] - 1]; //top card of hand is most recently drawn card.
-    if (cardDrawn == copper) // **BUG** should also check for silver and gold 
+    if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold) // **BUG** should also check for silver and gold 
       drawnTreasure++;
     else
     {
@@ -892,7 +892,7 @@ int mineEffect(int choice1, int choice2, int currentPlayer, int handPos, struct 
 
 int smithyEffect(int currentPlayer, int handPos, struct gameState *state){
     //+3 Cards
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 3; i++)
     {
       drawCard(currentPlayer, state);
     }
